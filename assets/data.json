@@ -1,0 +1,1742 @@
+{
+    "MakeUp": {
+        "Realistic": [
+            {
+                "style": "Sweety",
+                "img_url": "https://lh7-us.googleusercontent.com/u/0/sheets/APBGjha26np1OYLR8NUEPg1fuOwOzuIBc3xBuTInYypAd8IeSzFzGXtvdlqRvNWjy5Spqwr1cNNGQV-j8erTBRlQZ98pdqxtfo4zGyXb53VkGwrYdrdWlesrVIbyX-0ANPhWjEZhR3WXgktm4WU74rMaCLecu9gNxm9Ft98M00KCJHarbxsx22tzW89I6ZE4wgeJrek_kfKm_xg_9wmHb4MbpBRyNQr4C_8TOinkuw5DYYITPsJ_2OWQ3z-V8sY3i2OV6H3EFTKPoU7CETKkZ_T_cFH0vEXdlm9HmBfBXNfhb1xm4x0c4KM4uzV6UdwXwy93wilSGPKQVMrn_2xpPZ495mMMkVuYFVXurUkf3JCehzv_VOdHMzDwiAfW5to9mPPqyzEzkoFwDLud7iueDu8Ly12gmcqfFvocNmJJG8RUz1x3JvwpIRpKQ_yHP0lIN4CuuZ3bD0BsRmGvhKe0UPVUplPYjCLQP-s4qZaG0DOrMP4JRFwgzK9_hWMURLzh9YJ2MfBk5o8X_hV8D0aky2fA8cRH9za8w0uRL3PHR-d9jW5CtoieT4bslsNPO4AKnf5GRd1mTd8k-b6FuXVEava1Pctek311Brwu_tz_WHNq6ri7tnIg-Gne1b6rBuxzuwMSwpyVC0-Dk5q-LgplYt5aw5TfLmZvf5g5M5gBgyvtVMt6yJURbJZzHHyQg3tdQ2k-wrqxuy1dlftTwxVuNIsdNCCisPA8xF0loYcJcCI3rSdZb8XHO6BipQMhuq3hnuktL1pDKnbGMQoKtX5G2NjtSzT7srdmh6x5BkMfZqmetyUJIkMm68kczK28hv5OfrHpPK64CN4jdCmucWboH7UNPdjy-MEAmkEUpzWJPb5u1_N1ciFD1ZcnBEI_iCR-bXmkiFqAq0R6Qtcf2XKLI24UMmj4o7eRO7DEI_oWkz34qjmLzj2LoMrD7wH6uv_aykAWAmiuTKSF6Q",
+                "payload": {
+                    "alwayson_scripts": {
+                        "ControlNet": {
+                            "args": [
+                                {
+                                    "advanced_weighting": null,
+                                    "batch_images": "",
+                                    "control_mode": "Balanced",
+                                    "enabled": true,
+                                    "guidance_end": 1,
+                                    "guidance_start": 0,
+                                    "hr_option": "Both",
+                                    "image": null,
+                                    "inpaint_crop_input_image": false,
+                                    "input_mode": "simple",
+                                    "is_ui": true,
+                                    "loopback": false,
+                                    "low_vram": false,
+                                    "model": "control_v11p_sd15_canny [d14c016b]",
+                                    "module": "canny",
+                                    "output_dir": "",
+                                    "pixel_perfect": true,
+                                    "processor_res": 512,
+                                    "resize_mode": "Crop and Resize",
+                                    "save_detected_map": true,
+                                    "threshold_a": 100,
+                                    "threshold_b": 200,
+                                    "weight": 1
+                                },
+                                {
+                                    "advanced_weighting": null,
+                                    "batch_images": "",
+                                    "control_mode": "Balanced",
+                                    "enabled": false,
+                                    "guidance_end": 1,
+                                    "guidance_start": 0,
+                                    "hr_option": "Both",
+                                    "image": null,
+                                    "inpaint_crop_input_image": false,
+                                    "input_mode": "simple",
+                                    "is_ui": true,
+                                    "loopback": false,
+                                    "low_vram": false,
+                                    "model": "None",
+                                    "module": "none",
+                                    "output_dir": "",
+                                    "pixel_perfect": false,
+                                    "processor_res": -1,
+                                    "resize_mode": "Crop and Resize",
+                                    "save_detected_map": true,
+                                    "threshold_a": -1,
+                                    "threshold_b": -1,
+                                    "weight": 1
+                                },
+                                {
+                                    "advanced_weighting": null,
+                                    "batch_images": "",
+                                    "control_mode": "Balanced",
+                                    "enabled": false,
+                                    "guidance_end": 1,
+                                    "guidance_start": 0,
+                                    "hr_option": "Both",
+                                    "image": null,
+                                    "inpaint_crop_input_image": false,
+                                    "input_mode": "simple",
+                                    "is_ui": true,
+                                    "loopback": false,
+                                    "low_vram": false,
+                                    "model": "None",
+                                    "module": "none",
+                                    "output_dir": "",
+                                    "pixel_perfect": false,
+                                    "processor_res": -1,
+                                    "resize_mode": "Crop and Resize",
+                                    "save_detected_map": true,
+                                    "threshold_a": -1,
+                                    "threshold_b": -1,
+                                    "weight": 1
+                                }
+                            ]
+                        },
+                        "Extra options": {
+                            "args": []
+                        },
+                        "Hypertile": {
+                            "args": []
+                        },
+                        "Refiner": {
+                            "args": [
+                                false,
+                                "",
+                                0.8
+                            ]
+                        },
+                        "Seed": {
+                            "args": [
+                                -1,
+                                false,
+                                -1,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "batch_size": 1,
+                    "cfg_scale": 7,
+                    "comments": {},
+                    "denoising_strength": 0.5,
+                    "disable_extra_networks": false,
+                    "do_not_save_grid": false,
+                    "do_not_save_samples": false,
+                    "height": 512,
+                    "image_cfg_scale": 1.5,
+                    "init_images": [
+                        "<Image encoding base64>"
+                    ],
+                    "initial_noise_multiplier": 1,
+                    "inpaint_full_res": 0,
+                    "inpaint_full_res_padding": 32,
+                    "inpainting_fill": 1,
+                    "inpainting_mask_invert": 0,
+                    "mask_blur": 4,
+                    "mask_blur_x": 4,
+                    "mask_blur_y": 4,
+                    "n_iter": 1,
+                    "negative_prompt": "six fingers, deformity, extra fingers, deformed hands,, walks backwards, ugly, deformed, noisy, blurred, hands next to the face, distorted, out of focus, bad anatomy, extra limbs, bad face, bad hands, bad face, low quality body, worse quality body, bad body, bad anatomy drawing, mutation hands, mutation fingers, extra fingers, missing fingers, watermark, nsfw, (lack of clothes:1.2), (lack of detail:1.2), nsfw",
+                    "override_settings": {
+                        "sd_model_checkpoint": "asianrealisticSdlife_v40-fp16-no-ema.safetensors [36604d7196]"
+                    },
+                    "override_settings_restore_afterwards": true,
+                    "prompt": "Makes face brighter, focus on face, focus on eyes, emphasis on eyes, pastel background, pastel clothes, evenly spaced and white teeth if have, The small details are perfect, Clothes must not lack details, the jewelry shows clearly if have, Sharp images, warm colors, warm tone, HD image, 4K, realistic",
+                    "resize_mode": 0,
+                    "restore_faces": false,
+                    "s_churn": 0,
+                    "s_min_uncond": 0,
+                    "s_noise": 1,
+                    "s_tmax": null,
+                    "s_tmin": 0,
+                    "sampler_name": "DPM++ 2M",
+                    "script_args": [],
+                    "script_name": null,
+                    "seed": 4164897596,
+                    "seed_enable_extras": true,
+                    "seed_resize_from_h": -1,
+                    "seed_resize_from_w": -1,
+                    "steps": 20,
+                    "styles": [],
+                    "subseed": -1,
+                    "subseed_strength": 0.3,
+                    "tiling": false,
+                    "width": 512
+                }
+            },
+            {
+                "style": "Girly",
+                "img_url": "https://lh7-us.googleusercontent.com/u/0/sheets/APBGjhb4MtzhoTBbOA5Rcz591hy9ZcArM7erovSZl63jm1rQ5WTRgxr4O59KGEv6L1B-7Ktd_pI1W8dw-myeIZ_v6C4dH-yLO7DizgBb8zbOmzwU5RMbGEleBro8Ud8qgvc6eXVK1mOoczucXoyMSdKk8P_wbxXuGZsKBN5HQExTCDlC6Shlk2RDq83ktPpIhvdE6lZjM_Ygj49cNx_QjHUcwqbmAQP1P0UTj6I3jJegNKDOrSDNd0LSpEwNrZUKPCRTSyX2FRnbZfFYDgEZ0BafQnOvHDR1ORtzZPNSr08pbnBBhfu2smYc8vNscZzIfqR13cWbAgbw36izr3nixL2FJi8Rxmh-ouqj0Et1sqIHZvw5vpRnTSeVXYaHuP1rNH9wFdpDdbstKByZTQGxGWNCaEpMfFuAnUmzM7EcKE1eB56EgqT4fYGjgJxFN5tvoVCaBSSMjDqcrPwWu8dNu6tzd_a9EF8cl_2f7YVtRBIs6dI0A7i4cCjFGi0O6SD1DxPyjqawNETdy0y2O-Ac-fBSAvwzEiJd6semNi5FsYfq_jQI0ICJ_nx1YKBJlosoZe4ZyyQ06sfBr_uPUDOz-9MiGdGv0aGMUZRU2MQfoa8JJp4bY_u7l2yuxeeGW9ibWK_NCgOMTz-6ZmTOYKGOAAYVgYxAj7Ko7sTDmUkHDdoutXP9tEotvECsHQ5vVfyIUBKK8wlXylx6a9eVdEsVvDmw-ZKfTPf3fVLuTgnPdL_nd8nVtENbOdjFNPulLs0SlT1HTSZWIpIvtVpK6ZHu7KPeSq9DXNF7ZC7NUdIEcxc5gtx-yblyp1_QCB_GT1T7bKurLMmO6efYeBhIgQbuttTMdFfdXaGwzjvHoxA9r6980rysubTL8CnhUnNoMiqBAE7_xx9412G1-TabUduhQOp_NtK8TaBO3nkz-VVDkt5yPzFFP9cn0qxV0seMQaJ7Z4dVtOVz1mwcUg",
+                "payload": {
+                    "alwayson_scripts": {
+                        "ControlNet": {
+                            "args": [
+                                {
+                                    "advanced_weighting": null,
+                                    "batch_images": "",
+                                    "control_mode": "Balanced",
+                                    "enabled": true,
+                                    "guidance_end": 1,
+                                    "guidance_start": 0,
+                                    "hr_option": "Both",
+                                    "image": null,
+                                    "inpaint_crop_input_image": false,
+                                    "input_mode": "simple",
+                                    "is_ui": true,
+                                    "loopback": false,
+                                    "low_vram": false,
+                                    "model": "control_v11p_sd15_canny [d14c016b]",
+                                    "module": "canny",
+                                    "output_dir": "",
+                                    "pixel_perfect": true,
+                                    "processor_res": 512,
+                                    "resize_mode": "Crop and Resize",
+                                    "save_detected_map": true,
+                                    "threshold_a": 100,
+                                    "threshold_b": 200,
+                                    "weight": 1
+                                },
+                                {
+                                    "advanced_weighting": null,
+                                    "batch_images": "",
+                                    "control_mode": "Balanced",
+                                    "enabled": false,
+                                    "guidance_end": 1,
+                                    "guidance_start": 0,
+                                    "hr_option": "Both",
+                                    "image": null,
+                                    "inpaint_crop_input_image": false,
+                                    "input_mode": "simple",
+                                    "is_ui": true,
+                                    "loopback": false,
+                                    "low_vram": false,
+                                    "model": "None",
+                                    "module": "none",
+                                    "output_dir": "",
+                                    "pixel_perfect": false,
+                                    "processor_res": -1,
+                                    "resize_mode": "Crop and Resize",
+                                    "save_detected_map": true,
+                                    "threshold_a": -1,
+                                    "threshold_b": -1,
+                                    "weight": 1
+                                },
+                                {
+                                    "advanced_weighting": null,
+                                    "batch_images": "",
+                                    "control_mode": "Balanced",
+                                    "enabled": false,
+                                    "guidance_end": 1,
+                                    "guidance_start": 0,
+                                    "hr_option": "Both",
+                                    "image": null,
+                                    "inpaint_crop_input_image": false,
+                                    "input_mode": "simple",
+                                    "is_ui": true,
+                                    "loopback": false,
+                                    "low_vram": false,
+                                    "model": "None",
+                                    "module": "none",
+                                    "output_dir": "",
+                                    "pixel_perfect": false,
+                                    "processor_res": -1,
+                                    "resize_mode": "Crop and Resize",
+                                    "save_detected_map": true,
+                                    "threshold_a": -1,
+                                    "threshold_b": -1,
+                                    "weight": 1
+                                }
+                            ]
+                        },
+                        "Extra options": {
+                            "args": []
+                        },
+                        "Hypertile": {
+                            "args": []
+                        },
+                        "Refiner": {
+                            "args": [
+                                false,
+                                "",
+                                0.8
+                            ]
+                        },
+                        "Seed": {
+                            "args": [
+                                -1,
+                                false,
+                                -1,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "batch_size": 1,
+                    "cfg_scale": 7,
+                    "comments": {},
+                    "denoising_strength": 0.5,
+                    "disable_extra_networks": false,
+                    "do_not_save_grid": false,
+                    "do_not_save_samples": false,
+                    "height": 512,
+                    "image_cfg_scale": 1.5,
+                    "init_images": [
+                        "<Image encoding base64>"
+                    ],
+                    "initial_noise_multiplier": 1,
+                    "inpaint_full_res": 0,
+                    "inpaint_full_res_padding": 32,
+                    "inpainting_fill": 1,
+                    "inpainting_mask_invert": 0,
+                    "mask_blur": 4,
+                    "mask_blur_x": 4,
+                    "mask_blur_y": 4,
+                    "n_iter": 1,
+                    "negative_prompt": "six fingers, deformity, extra fingers, deformed hands,, walks backwards, ugly, deformed, noisy, blurred, hands next to the face, distorted, out of focus, bad anatomy, extra limbs, bad face, bad hands, bad face, low quality body, worse quality body, bad body, bad anatomy drawing, mutation hands, mutation fingers, extra fingers, missing fingers, watermark, nsfw, (lack of clothes:1.2), (lack of detail:1.2), nsfw",
+                    "override_settings": {
+                        "sd_model_checkpoint": "asianrealisticSdlife_v40-fp16-no-ema.safetensors [36604d7196]"
+                    },
+                    "override_settings_restore_afterwards": true,
+                    "prompt": "Makes face brighter, focus on face, focus on eyes, emphasis on eyes, pastel background, pastel clothes, beautiful smime, white teeth,  perfect small details, beautiful jewelry, warm colors, warm tone, HD image, 4K, realistic",
+                    "resize_mode": 0,
+                    "restore_faces": false,
+                    "s_churn": 0,
+                    "s_min_uncond": 0,
+                    "s_noise": 1,
+                    "s_tmax": null,
+                    "s_tmin": 0,
+                    "sampler_name": "DPM++ 2M",
+                    "script_args": [],
+                    "script_name": null,
+                    "seed": 4164897596,
+                    "seed_enable_extras": true,
+                    "seed_resize_from_h": -1,
+                    "seed_resize_from_w": -1,
+                    "steps": 20,
+                    "styles": [],
+                    "subseed": -1,
+                    "subseed_strength": 0.3,
+                    "tiling": false,
+                    "width": 512
+                }
+            }
+        ],
+        "Chibi": [
+            {
+                "style": "Black Rose",
+                "img_url": "https://lh7-us.googleusercontent.com/u/0/sheets/APBGjhZh3tICuolF0H4ZHknTQnDs_p50cc9G_DvxHQGarNUR7yCj7BE1z2W7kM6ZivRBTOEeBtQ_ic4Sddp22PPULCw2SzQFqDPj15oE8QEVX0fLs0XxGYKDUYmAqYf9oTwrLeiTOdWtpC8nea2h3hvH9xgDBNcM6QR8vEIq9nJ_v1a4sZqM9QawG-N9WTqtNPtZxsMcdEpxF6AKzca2OCIr0pf1GGWDqUi4Pc0JA2J7CGeZ9HojGp3PTyRsHbFjCe-nHKEYDuYTU_Cq1XNjgTj8qcUu1f2k8HQQdPDSX6ovssXWsYgsj4wLkyg_ghA-y08vkQdR7JvOg1clIRfOO3E5RJUEcVPTfTAAUyqXAhuzTo0h8M8z5nXfyGQnxEYj9fJB0jtYcQlh1JyHxINAbXN4UkPzcSzjS0GO5kZJCHEK_np9eI3Qyi-osuIUzBQ9ZjVNfRlM7L1Plgp6WYrNA4WCVGJ00EpuaI-4D2LA7yxLlQ93GUvxHEUtS-vts-8HcOiDM6NNZhZJUzF6DjTfu0etwINV0k1Lgw5pKIJcZKAbQK65LIkUP2vakEBoxs9B-WNBr6hCX6J2X5d9NaqXSyDDHMhYt6HU9IbBqXgamgIX9X11S_aaFeK2fMnyWSQiqsiE5sPLHZUQNkvJsZaI3L1ncMBinnAQ41cJPPFyXpD88j8WeB3NQ7L9ZRWBvSXwOmmsQQl_esUE0JUeEm1g4JHPL1meU9NU2ld8rCAQRItKFc5WdjDfxC7rm2ttc29gt3bBW1WdVKRcEWmT57zvOCvSt3A1XgApANUstCTH5lxm3uPjOfTiNFT0h_lYTZvU2M9KCbjKP_bi-SR3uy4m0LfXlUOX_azXauTU7Lcfi918_49rjknADKQD28kkzrJdy6S_wBz-s9JsGJHiaCZadCBV-DNx4tNDqOdtSS14MIX77nLnYLfkKkmEZi-McXNN5sdxYSfQMGrKFg",
+                "payload": {
+                    "alwayson_scripts": {
+                        "ControlNet": {
+                            "args": [
+                                {
+                                    "advanced_weighting": null,
+                                    "batch_images": "",
+                                    "control_mode": "My prompt is more important",
+                                    "enabled": true,
+                                    "guidance_end": 1,
+                                    "guidance_start": 0,
+                                    "hr_option": "Both",
+                                    "image": null,
+                                    "inpaint_crop_input_image": false,
+                                    "input_mode": "simple",
+                                    "is_ui": true,
+                                    "loopback": false,
+                                    "low_vram": false,
+                                    "model": "control_v11p_sd15_canny [d14c016b]",
+                                    "module": "canny",
+                                    "output_dir": "",
+                                    "pixel_perfect": true,
+                                    "processor_res": 512,
+                                    "resize_mode": "Crop and Resize",
+                                    "save_detected_map": true,
+                                    "threshold_a": 100,
+                                    "threshold_b": 200,
+                                    "weight": 1
+                                },
+                                {
+                                    "advanced_weighting": null,
+                                    "batch_images": "",
+                                    "control_mode": "Balanced",
+                                    "enabled": false,
+                                    "guidance_end": 1,
+                                    "guidance_start": 0,
+                                    "hr_option": "Both",
+                                    "image": null,
+                                    "inpaint_crop_input_image": false,
+                                    "input_mode": "simple",
+                                    "is_ui": true,
+                                    "loopback": false,
+                                    "low_vram": false,
+                                    "model": "None",
+                                    "module": "none",
+                                    "output_dir": "",
+                                    "pixel_perfect": false,
+                                    "processor_res": -1,
+                                    "resize_mode": "Crop and Resize",
+                                    "save_detected_map": true,
+                                    "threshold_a": -1,
+                                    "threshold_b": -1,
+                                    "weight": 1
+                                },
+                                {
+                                    "advanced_weighting": null,
+                                    "batch_images": "",
+                                    "control_mode": "Balanced",
+                                    "enabled": false,
+                                    "guidance_end": 1,
+                                    "guidance_start": 0,
+                                    "hr_option": "Both",
+                                    "image": null,
+                                    "inpaint_crop_input_image": false,
+                                    "input_mode": "simple",
+                                    "is_ui": true,
+                                    "loopback": false,
+                                    "low_vram": false,
+                                    "model": "None",
+                                    "module": "none",
+                                    "output_dir": "",
+                                    "pixel_perfect": false,
+                                    "processor_res": -1,
+                                    "resize_mode": "Crop and Resize",
+                                    "save_detected_map": true,
+                                    "threshold_a": -1,
+                                    "threshold_b": -1,
+                                    "weight": 1
+                                }
+                            ]
+                        },
+                        "Extra options": {
+                            "args": []
+                        },
+                        "Hypertile": {
+                            "args": []
+                        },
+                        "Refiner": {
+                            "args": [
+                                false,
+                                "",
+                                0.8
+                            ]
+                        },
+                        "Seed": {
+                            "args": [
+                                -1,
+                                false,
+                                -1,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "batch_size": 1,
+                    "cfg_scale": 7,
+                    "comments": {},
+                    "denoising_strength": 0.6,
+                    "disable_extra_networks": false,
+                    "do_not_save_grid": false,
+                    "do_not_save_samples": false,
+                    "height": 512,
+                    "image_cfg_scale": 1.5,
+                    "init_images": [
+                        "<Image encoding base64>"
+                    ],
+                    "initial_noise_multiplier": 1,
+                    "inpaint_full_res": 0,
+                    "inpaint_full_res_padding": 32,
+                    "inpainting_fill": 1,
+                    "inpainting_mask_invert": 0,
+                    "mask_blur": 4,
+                    "mask_blur_x": 4,
+                    "mask_blur_y": 4,
+                    "n_iter": 1,
+                    "negative_prompt": "six fingers, deformity, extra fingers, deformed hands,, walks backwards, ugly, deformed, noisy, blurred, hands next to the face, distorted, out of focus, bad anatomy, extra limbs, bad face, bad hands, bad face, low quality body, worse quality body, bad body, bad anatomy drawing, mutation hands, mutation fingers, extra fingers, missing fingers, watermark, nsfw, (lack of clothes:1.2), (lack of detail:1.2), nsfw",
+                    "override_settings": {
+                        "sd_model_checkpoint": "asianrealisticSdlife_v40-fp16-no-ema.safetensors [36604d7196]"
+                    },
+                    "override_settings_restore_afterwards": true,
+                    "prompt": "wearing a black dress, black flower in dress, ridescent effect, black earrings and necklace, magic, wears a black wreath on head,black wings on the back, black or gray backround, Sharp images, HD image, 4k",
+                    "resize_mode": 0,
+                    "restore_faces": false,
+                    "s_churn": 0,
+                    "s_min_uncond": 0,
+                    "s_noise": 1,
+                    "s_tmax": null,
+                    "s_tmin": 0,
+                    "sampler_name": "DPM++ 2M",
+                    "script_args": [],
+                    "script_name": null,
+                    "seed": 1514822317,
+                    "seed_enable_extras": true,
+                    "seed_resize_from_h": -1,
+                    "seed_resize_from_w": -1,
+                    "steps": 20,
+                    "styles": [],
+                    "subseed": -1,
+                    "subseed_strength": 0.3,
+                    "tiling": false,
+                    "width": 512
+                }
+            },
+            {
+                "style": "White Rose",
+                "img_url": "https://lh7-us.googleusercontent.com/u/0/sheets/APBGjhZ93RFeSiXnW7swXTw_ufWTzvLrVJxkL8l7St697tNZ4aIyq-LypvACA9ou6ejATGX7k8M6YBTaKoqrmwvMQv6m7zLekW08Y2rILrJu_UPZqknoCgDVRZOYkW4AA7Bxymw9r83o-P5ouUyCGZP9Uyd1fr8DPTMJ0wUTvH0-hHDlaVYY23qTWu3WDLzp5T0afbiGrM2tPrGAfGrqum1bRj_s1kIU8RD8kuIk0Cspqib-ADmXvRkj_E_xj8Jt4D38kbo33VcV2pwzSGMgVPhjz4S5aciqLDJtk-nyQJJoAtRplSnicbSJYnPYlH_bLyWn2HGe3vH23A-2QCCS2LDEuqtf6_DrrPwyHBXUyHnbN7GgZ9qoKixk5x8skTxIOeZl1BGDF7NdCRNul6VKcEBTfoVH7Z29zQz1DNFfQ1ZcArjunqgPKDk8uuSLltWdIY5Z7gfrGZVLyBQMNKf8eWFFNGk_3HSI4GYB1jebY9GZglbw05-e5rpSTFc7TDwtlG_U13cugOv96LNjimaznQfIruWvCqIykvjKho-WqRwtsxkDZo7L4dYyPvjm9B-lwmybWRUsu7_z1ry4Kkwhq1Os1zFrfiQJ4BoHkx_Br-dcWSxhudfNhLznAaGYYLbEUf8V2_dBLcHE6qlytfllYPPTKq0UyX0ojw2MfnJeHXsEUfqN9L4BMvw6iAakUgrZ4k46GZaiJVTfaSliTmU7pRxm386NqdifMANibvES6SXcr8nxYU3-mFKKS4bWZ-fjJ4rfwIdD6abiedLCsKeFLkqst-InRDatS3133F_r7rqYkR_RJjuhLXWBvy6Ji2fysyNCn6tXDVvMGTuGY0Jhlb6LnYJWxbUxplSYy01z3h-uV4D-1QjZ5w1n2ex_iMvSeu8IFlxEP5KOu2FR4frJT3iVAhu2omnQdLfapuDOYjDI4fPJCFjTLAgKLf5Nn0E0RgpO7dT0JnrwMA",
+                "payload": {
+                    "alwayson_scripts": {
+                        "ControlNet": {
+                            "args": [
+                                {
+                                    "advanced_weighting": null,
+                                    "batch_images": "",
+                                    "control_mode": "My prompt is more important",
+                                    "enabled": true,
+                                    "guidance_end": 1,
+                                    "guidance_start": 0,
+                                    "hr_option": "Both",
+                                    "image": null,
+                                    "inpaint_crop_input_image": false,
+                                    "input_mode": "simple",
+                                    "is_ui": true,
+                                    "loopback": false,
+                                    "low_vram": false,
+                                    "model": "control_v11p_sd15_canny [d14c016b]",
+                                    "module": "canny",
+                                    "output_dir": "",
+                                    "pixel_perfect": true,
+                                    "processor_res": 512,
+                                    "resize_mode": "Crop and Resize",
+                                    "save_detected_map": true,
+                                    "threshold_a": 100,
+                                    "threshold_b": 200,
+                                    "weight": 1
+                                },
+                                {
+                                    "advanced_weighting": null,
+                                    "batch_images": "",
+                                    "control_mode": "Balanced",
+                                    "enabled": false,
+                                    "guidance_end": 1,
+                                    "guidance_start": 0,
+                                    "hr_option": "Both",
+                                    "image": null,
+                                    "inpaint_crop_input_image": false,
+                                    "input_mode": "simple",
+                                    "is_ui": true,
+                                    "loopback": false,
+                                    "low_vram": false,
+                                    "model": "None",
+                                    "module": "none",
+                                    "output_dir": "",
+                                    "pixel_perfect": false,
+                                    "processor_res": -1,
+                                    "resize_mode": "Crop and Resize",
+                                    "save_detected_map": true,
+                                    "threshold_a": -1,
+                                    "threshold_b": -1,
+                                    "weight": 1
+                                },
+                                {
+                                    "advanced_weighting": null,
+                                    "batch_images": "",
+                                    "control_mode": "Balanced",
+                                    "enabled": false,
+                                    "guidance_end": 1,
+                                    "guidance_start": 0,
+                                    "hr_option": "Both",
+                                    "image": null,
+                                    "inpaint_crop_input_image": false,
+                                    "input_mode": "simple",
+                                    "is_ui": true,
+                                    "loopback": false,
+                                    "low_vram": false,
+                                    "model": "None",
+                                    "module": "none",
+                                    "output_dir": "",
+                                    "pixel_perfect": false,
+                                    "processor_res": -1,
+                                    "resize_mode": "Crop and Resize",
+                                    "save_detected_map": true,
+                                    "threshold_a": -1,
+                                    "threshold_b": -1,
+                                    "weight": 1
+                                }
+                            ]
+                        },
+                        "Extra options": {
+                            "args": []
+                        },
+                        "Hypertile": {
+                            "args": []
+                        },
+                        "Refiner": {
+                            "args": [
+                                false,
+                                "",
+                                0.8
+                            ]
+                        },
+                        "Seed": {
+                            "args": [
+                                -1,
+                                false,
+                                -1,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "batch_size": 1,
+                    "cfg_scale": 7,
+                    "comments": {},
+                    "denoising_strength": 0.6,
+                    "disable_extra_networks": false,
+                    "do_not_save_grid": false,
+                    "do_not_save_samples": false,
+                    "height": 512,
+                    "image_cfg_scale": 1.5,
+                    "init_images": [
+                        "<Image encoding base64>"
+                    ],
+                    "initial_noise_multiplier": 1,
+                    "inpaint_full_res": 0,
+                    "inpaint_full_res_padding": 32,
+                    "inpainting_fill": 1,
+                    "inpainting_mask_invert": 0,
+                    "mask_blur": 4,
+                    "mask_blur_x": 4,
+                    "mask_blur_y": 4,
+                    "n_iter": 1,
+                    "negative_prompt": "six fingers, deformity, extra fingers, deformed hands,, walks backwards, ugly, deformed, noisy, blurred, hands next to the face, distorted, out of focus, bad anatomy, extra limbs, bad face, bad hands, bad face, low quality body, worse quality body, bad body, bad anatomy drawing, mutation hands, mutation fingers, extra fingers, missing fingers, watermark, nsfw, (lack of clothes:1.2), (lack of detail:1.2), nsfw",
+                    "override_settings": {
+                        "sd_model_checkpoint": "asianrealisticSdlife_v40-fp16-no-ema.safetensors [36604d7196]"
+                    },
+                    "override_settings_restore_afterwards": true,
+                    "prompt": "a white dress, white or transparent rose flower in dress, ridescent effect, white or transparent earrings and necklace, magic, wears a white or transparent wreath on head, white or gray backround, fresh efffect, beautiful smile, white teeth, focus on eyes, HD image, 4k, perfect small detail",
+                    "resize_mode": 0,
+                    "restore_faces": false,
+                    "s_churn": 0,
+                    "s_min_uncond": 0,
+                    "s_noise": 1,
+                    "s_tmax": null,
+                    "s_tmin": 0,
+                    "sampler_name": "DPM++ 2M",
+                    "script_args": [],
+                    "script_name": null,
+                    "seed": 1888041100,
+                    "seed_enable_extras": true,
+                    "seed_resize_from_h": -1,
+                    "seed_resize_from_w": -1,
+                    "steps": 20,
+                    "styles": [],
+                    "subseed": -1,
+                    "subseed_strength": 0.3,
+                    "tiling": false,
+                    "width": 512
+                }
+            }
+        ]
+    },
+    "Clothes": {
+        "Beach": [
+            {
+                "style": "Pastel Dress",
+                "img_url": "https://lh7-us.googleusercontent.com/u/0/sheets/APBGjhbfpo9ZiZJT323NLwKcQdqFFbCn78_Z01reNTP_XmlGGxGcal3GLD6lzcL3XcETvjaNwLWhK7RvokgRV3NXyONKAZ3P7496DfyVFYIaCwS8Nb5IMHUukT0ZBFG6QgwIK7gHTZEY49I6b6PCc8eNMphA5m7cjQxFjEOA8vDZgb0I94OVZ7Vbw9EmNwsFUw_agRK-VtNTfq596XfGK8PGJf3cELLIAKRWXlSb3-L6YCeQ2_0OS-C52Yh4sdLqeuooWNahDJODagPtxmNqg9WzkoPfAlpG33rwypLP0fYOTxYMwq1oFwnLe9gLjC9sJGUZoaX1_f29bNo3RBcEgm0YrASdjbG19ibrA0S35iCGbtGWmAkxkdzQWDxKx72cesH1Vdvph9ieJLhuVqo2qMO0hASkkDPoVCyMG5WFAowBJfxOeaE1wcdgGEagldrRs9h3xinS6uSeYwuclfjjK7D1UflUulmRPfZC645FMak6eNt9ea9btOzkg6tPs91GSjT7gjJpWA3-3_wX8BOrjuTCLPjx8wBGyaN2EE9_9a5_neL6sq-N4tsmwVTAk41oQ13BwY35Cn96d5HIq9RBIqojRisZGwYkPE5D3UDW6xAOOrckbCn0XGbXUJCWe6yhrYVsncCWJIGFMtkwEDEi_6FDYOSXJ8fmFsvqJ4yZdkrTnHyF3QE4O7KhszyUEtk3nI23XaQ-4RTn_CCmRtInGSuZYga5S-OEg1ZJGrjYHIt870GNymKacF2EVWv7MxCW-3kjNxWrd37euiH_EPl4ITNC4YuQrwBUoDJQPpXSQJE1tUW-jzdTSGsi29gCPf4xq8kgBIjmQ4cigQ8qa8Ig0qppFG-5VLqoHipLr9ACQBiitUeDuOZ5tQhbk_tm90UDrTBpHtBLo3lQ73fwmtkrOLEjcufF28hvgfhoCrG8QYL5c66l8zFVa4ibY6KupkEwH9CbS-BXBZbExA",
+                "payload": {
+                    "alwayson_scripts": {
+                        "roop": {
+                            "args": [
+                                "<face-img-base64>",
+                                true,
+                                "0",
+                                "/stable-diffusion-webui/models/roop/inswapper_128.onnx",
+                                "CodeFormer",
+                                1,
+                                "R-ESRGAN 4x+",
+                                1.25,
+                                1,
+                                false,
+                                true
+                            ]
+                        },
+                        "ControlNet": {
+                            "args": [
+                                {
+                                    "advanced_weighting": null,
+                                    "batch_images": "",
+                                    "control_mode": "Balanced",
+                                    "enabled": true,
+                                    "guidance_end": 1,
+                                    "guidance_start": 0,
+                                    "hr_option": "Both",
+                                    "image": null,
+                                    "inpaint_crop_input_image": false,
+                                    "input_mode": "simple",
+                                    "is_ui": true,
+                                    "loopback": false,
+                                    "low_vram": false,
+                                    "model": "control_v11p_sd15_openpose [cab727d4]",
+                                    "module": "openpose_full",
+                                    "output_dir": "",
+                                    "pixel_perfect": true,
+                                    "processor_res": 512,
+                                    "resize_mode": "Crop and Resize",
+                                    "save_detected_map": true,
+                                    "threshold_a": 100,
+                                    "threshold_b": 200,
+                                    "weight": 0.6
+                                }
+                            ]
+                        },
+                        "Extra options": {
+                            "args": []
+                        },
+                        "Hypertile": {
+                            "args": []
+                        },
+                        "Refiner": {
+                            "args": [
+                                false,
+                                "",
+                                0.8
+                            ]
+                        },
+                        "Seed": {
+                            "args": [
+                                -1,
+                                false,
+                                -1,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "batch_size": 1,
+                    "cfg_scale": 7,
+                    "comments": {},
+                    "denoising_strength": 0.75,
+                    "disable_extra_networks": false,
+                    "do_not_save_grid": false,
+                    "do_not_save_samples": false,
+                    "height": "<input image height> (int)",
+                    "image_cfg_scale": 1.5,
+                    "init_images": [
+                        "<sd-input-img-base64>"
+                    ],
+                    "initial_noise_multiplier": 1.0,
+                    "inpaint_full_res": 0,
+                    "inpaint_full_res_padding": 32,
+                    "inpainting_fill": 1,
+                    "inpainting_mask_invert": 0,
+                    "mask_blur": 4,
+                    "mask_blur_x": 4,
+                    "mask_blur_y": 4,
+                    "n_iter": 1,
+                    "negative_prompt": "six fingers, deformity, extra fingers, deformed hands,, walks backwards, ugly, deformed, noisy, blurred, hands next to the face, distorted, out of focus, bad anatomy, extra limbs, bad face, bad hands, bad face, low quality body, worse quality body, bad body, bad anatomy drawing, mutation hands, mutation fingers, extra fingers, missing fingers, watermark, nsfw, (lack of clothes:1.2), (lack of detail:1.2), nsfw",
+                    "override_settings": {
+                        "sd_model_checkpoint": "realisticVisionV60B1_v51VAE.ckpt [392def60e4]"
+                    },
+                    "override_settings_restore_afterwards": true,
+                    "prompt": "A high-fashion editorial photo featuring a full-length model in a casual style, evoking an air of nonchalant sophistication. (The model is captured walking along a serene beach at sunset), wearing (pastel-toned romantic dress:1.2), (long dress with waistline:1.2), colorful jewelry. Perfect face, (highly detailed facial features). Nature eyeshadow, (eyeliner: 1.1). Nature Eyebrown (highly detailed). The warm golden light cascades over the scene, creating a dreamy and ethereal ambiance. Shot with a Sony G Master 24-70mm f/2.8 lens, ISO 200, f/5.6, and a shutter speed of 1/100s, the image has a polished and editorial aesthetic, (beautiful smile), showcasing the model's effortless style, Mysterious, white teeth, smile, fresh",
+                    "resize_mode": 0,
+                    "restore_faces": false,
+                    "s_churn": 0.0,
+                    "s_min_uncond": 0.0,
+                    "s_noise": 1.0,
+                    "s_tmax": null,
+                    "s_tmin": 0.0,
+                    "sampler_name": "DPM++ 2M Karras",
+                    "script_args": [],
+                    "script_name": null,
+                    "seed": 2452189051,
+                    "seed_enable_extras": true,
+                    "seed_resize_from_h": -1,
+                    "seed_resize_from_w": -1,
+                    "steps": 25,
+                    "styles": [],
+                    "subseed": -1,
+                    "subseed_strength": 0.3,
+                    "tiling": false,
+                    "width": "<input image width> (int)"
+                }
+            },
+            {
+                "style": "Floral Maxi",
+                "img_url": "https://lh7-us.googleusercontent.com/u/0/sheets/APBGjhacpDV70zQsa5Rno2L6Q5qx3HEqtYjCKceQgv3PezUtMPF_euuZIGe2m571cYU6vnYtMDO6RlPuayxF3f15vf41jd4nnsI3sNypOfhMHrtPmFxqB7eWwZlMi5I7bZIYVE5H8k97P7fm_AtBSGm5HdOmDco38_fEsuJlT0BvLxGo9LlEAgj_r2TWwRWA7VCQDnICV8i8RV2_5ig4V8hQ-Eyp0VJselPeI9LbgU2ry7LiNlWYqB8CeUjdoAtPHwkb9SRgLZs2fT2_K9ygV2zyV468WCaLC4LsJVXJgtGPKFNgHmEBIT-6ZtOBP1bOEKe-GNHeliuxILRkuD-j5aaK-CQ83_rEUHKEMzG3TeHiaV6Q1NhajPBMzj8SVceTWPLu7YrcKXsmSSw5_poEx5UAgIU5IEzRACC_X1bRn59IY_QqIbgGSJC8KM9yFs1BpLExPRv6WWlmWStD1u5G0xbaS5mzurUEwLKCJzjG3pU6Fk1-pE9TbsXMjyhSGtXqD6yYkx5w9PKGoqiTYKjCfSHjlcapC3_BW3UFoFEi-mGPNtaWO_44C0rWV8za84ZdMptWYoYDFa6UXFPid9bFITqcMjD4KtbAMjdhp32NLytusH4qwsvjwPbqGuFUXuEmGYkiVss0StKSaJuw1ICJXLLhgU-5FF_5uOV7BMUw5_0w8r1CEQlL5hr78XLGe2O-E32GrLq9OmpAtVwapuVPIrhwPp-_SqmOtANivDzL01uRII5VJINWzLWtE2J8Qeol7PQhiAr2Mdup1lO6ZMVdlhLcLFUD5HFBZlIMVRVNIffYEv2fJORlAkVr7zcEcc5r3LhjwiL8bQzpyeqb2n5dHiewZG4xpnheAiD7pY1mWa4rQW0H3nfrcfycW1cwIPJMXUlA7RPpv9kgJ7uISgKv6bVMGGCfQvcj6CspxK9w9rGa8m39ztqbet4V-RUJ-GIhaMi-bk_t6wLs",
+                "payload": {
+                    "alwayson_scripts": {
+                        "roop": {
+                            "args": [
+                                "<face-img-base64>",
+                                true,
+                                "0",
+                                "/stable-diffusion-webui/models/roop/inswapper_128.onnx",
+                                "CodeFormer",
+                                1,
+                                "R-ESRGAN 4x+",
+                                1.25,
+                                1,
+                                false,
+                                true
+                            ]
+                        },
+                        "ControlNet": {
+                            "args": [
+                                {
+                                    "advanced_weighting": null,
+                                    "batch_images": "",
+                                    "control_mode": "Balanced",
+                                    "enabled": true,
+                                    "guidance_end": 1,
+                                    "guidance_start": 0,
+                                    "hr_option": "Both",
+                                    "image": null,
+                                    "inpaint_crop_input_image": false,
+                                    "input_mode": "simple",
+                                    "is_ui": true,
+                                    "loopback": false,
+                                    "low_vram": false,
+                                    "model": "control_v11p_sd15_openpose [cab727d4]",
+                                    "module": "openpose_full",
+                                    "output_dir": "",
+                                    "pixel_perfect": true,
+                                    "processor_res": 512,
+                                    "resize_mode": "Crop and Resize",
+                                    "save_detected_map": true,
+                                    "threshold_a": 100,
+                                    "threshold_b": 200,
+                                    "weight": 0.6
+                                }
+                            ]
+                        },
+                        "Extra options": {
+                            "args": []
+                        },
+                        "Hypertile": {
+                            "args": []
+                        },
+                        "Refiner": {
+                            "args": [
+                                false,
+                                "",
+                                0.8
+                            ]
+                        },
+                        "Seed": {
+                            "args": [
+                                -1,
+                                false,
+                                -1,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "batch_size": 1,
+                    "cfg_scale": 7,
+                    "comments": {},
+                    "denoising_strength": 0.75,
+                    "disable_extra_networks": false,
+                    "do_not_save_grid": false,
+                    "do_not_save_samples": false,
+                    "height": "<input image height> (int)",
+                    "image_cfg_scale": 1.5,
+                    "init_images": [
+                        "<sd-input-img-base64>"
+                    ],
+                    "initial_noise_multiplier": 1.0,
+                    "inpaint_full_res": 0,
+                    "inpaint_full_res_padding": 32,
+                    "inpainting_fill": 1,
+                    "inpainting_mask_invert": 0,
+                    "mask_blur": 4,
+                    "mask_blur_x": 4,
+                    "mask_blur_y": 4,
+                    "n_iter": 1,
+                    "negative_prompt": "six fingers, deformity, extra fingers, deformed hands,, walks backwards, ugly, deformed, noisy, blurred, hands next to the face, distorted, out of focus, bad anatomy, extra limbs, bad face, bad hands, bad face, low quality body, worse quality body, bad body, bad anatomy drawing, mutation hands, mutation fingers, extra fingers, missing fingers, watermark, nsfw, (lack of clothes:1.2), (lack of detail:1.2), nsfw",
+                    "override_settings": {
+                        "sd_model_checkpoint": "realisticVisionV60B1_v51VAE.ckpt [392def60e4]"
+                    },
+                    "override_settings_restore_afterwards": true,
+                    "prompt": "Blonde woman, A high-fashion editorial photo featuring a full-length model in a casual style, evoking an air of nonchalant sophistication. (The model is captured walking along a serene beach at sunset), wearing prom dresses, BREAK (gorgeous gradient black and light blue prom dress:1.4) while walking barefoot on the beach. Perfect face, (highly detailed facial features). Nature eyeshadow, (eyeliner: 1.1). Nature Eyebrown (highly detailed). The warm golden light cascades over the scene, creating a dreamy and ethereal ambiance. emphasis on the graceful billowing of the dress in the sea breeze, Shot with a Sony G Master 24-70mm f/2.8 lens, ISO 200, f/5.6, and a shutter speed of 1/100s, the image has a polished and editorial aesthetic, (beautiful smile) showcasing the model's effortless style., Mysterious, smile, fresh, white teeth",
+                    "resize_mode": 0,
+                    "restore_faces": false,
+                    "s_churn": 0.0,
+                    "s_min_uncond": 0.0,
+                    "s_noise": 1.0,
+                    "s_tmax": null,
+                    "s_tmin": 0.0,
+                    "sampler_name": "DPM++ 2M Karras",
+                    "script_args": [],
+                    "script_name": null,
+                    "seed": 2452189051,
+                    "seed_enable_extras": true,
+                    "seed_resize_from_h": -1,
+                    "seed_resize_from_w": -1,
+                    "steps": 25,
+                    "styles": [],
+                    "subseed": -1,
+                    "subseed_strength": 0.3,
+                    "tiling": false,
+                    "width": "<input image width> (int)"
+                }
+            }
+        ],
+        "Cool": [
+            {
+                "style": "Golden Black",
+                "img_url": "https://lh7-us.googleusercontent.com/u/0/sheets/APBGjhYZQUDIDfq2lrxRYX1D3dxbIw3kbRXLoC3n38bbcDYwGOhIt03zE_lzvBGfoD0LqQDMenHe2szv02KJ3Uy0968MNDj2RiYSzRhjo88VhzFP3NeZmNkeeiDC1dIGqmHw3h90hyUSMRTC_gf7Z1NNQXzXJh7N-NnILeBCOFswvovZaKmzhu9D0XdmczXCgVXfiZuoVmAS6Q88U33S3Ftyqkp_qVCbdn5qyp9BP7rLOLYHryRTYykB0eVcm3EPcG5gbFKrckCcATjwqQOB7uwoJklNMJ1TYRQk01JiuNUqhB2H3TuhHGiUVHSUKnC3y_mde_4w54a_FxbtHzIE5SZkZKfrbp5xv6Gprw3tzctjIavEZ-dV1mkJzPGiB6NWsJQPzOXPDE9_fPi2le-nKM59B3kbhoGQSgXUtF193y8Ajh1Fkf1B7aMXf66b5EGQvfm1ju4QAI6pbzGWnp-W9REJ0ToSp-EuFCyDOao9Ewghty_F4xQDaX1tBCZvsA_sDRiFp8J6pVdEoXRW3kvrCDTeCKvmiHVskl_J0Wk0_DGdISnbnHPQ2w_UBSucf6K8e9RNTcFZdB8FG6uW0tVLE38KTMp0b1JttDFgmDdtokQqevJi8WzqJxGq7jDVDhikQbpAhl4Pqk0J7NtHCL8z8PxS27S6AvvLTU25qUI9PPdBhg8n2QsOYl2RZJNLezeG5zkYMcUlnIaDzcur6hca1qReBiXjbjyMRe-qwl53_luN7h7jWy88gy8OAA1z5mNKiMBHveEcYsbanqyQAcq32_JyUM3Viz_oXZHw1io7i6-RCUyTE-u5lI7pp3fEfgKv4-5C-sNrp0CJpkGlGdEq9xXi1vJtnl8K6jHS9LYsmfl1KrNlfGpMUi-EuMLq49EgWXB0Avwmcjl30qJXRCKQCJIzzY75VwaxzgTMZFr96EYzClqSFKDbx-vXJFmv71mROmccNqTEI0Vd",
+                "payload": {
+                    "alwayson_scripts": {
+                        "roop": {
+                            "args": [
+                                "<face-img-base64>",
+                                true,
+                                "0",
+                                "/stable-diffusion-webui/models/roop/inswapper_128.onnx",
+                                "CodeFormer",
+                                1,
+                                "R-ESRGAN 4x+",
+                                1.25,
+                                1,
+                                false,
+                                true
+                            ]
+                        },
+                        "ControlNet": {
+                            "args": [
+                                {
+                                    "advanced_weighting": null,
+                                    "batch_images": "",
+                                    "control_mode": "Balanced",
+                                    "enabled": true,
+                                    "guidance_end": 1,
+                                    "guidance_start": 0,
+                                    "hr_option": "Both",
+                                    "image": null,
+                                    "inpaint_crop_input_image": false,
+                                    "input_mode": "simple",
+                                    "is_ui": true,
+                                    "loopback": false,
+                                    "low_vram": false,
+                                    "model": "control_v11p_sd15_openpose [cab727d4]",
+                                    "module": "openpose_full",
+                                    "output_dir": "",
+                                    "pixel_perfect": true,
+                                    "processor_res": 512,
+                                    "resize_mode": "Crop and Resize",
+                                    "save_detected_map": true,
+                                    "threshold_a": 100,
+                                    "threshold_b": 200,
+                                    "weight": 0.6
+                                }
+                            ]
+                        },
+                        "Extra options": {
+                            "args": []
+                        },
+                        "Hypertile": {
+                            "args": []
+                        },
+                        "Refiner": {
+                            "args": [
+                                false,
+                                "",
+                                0.8
+                            ]
+                        },
+                        "Seed": {
+                            "args": [
+                                -1,
+                                false,
+                                -1,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "batch_size": 1,
+                    "cfg_scale": 7,
+                    "comments": {},
+                    "denoising_strength": 0.75,
+                    "disable_extra_networks": false,
+                    "do_not_save_grid": false,
+                    "do_not_save_samples": false,
+                    "height": "<input image height> (int)",
+                    "image_cfg_scale": 1.5,
+                    "init_images": [
+                        "<sd-input-img-base64>"
+                    ],
+                    "initial_noise_multiplier": 1.0,
+                    "inpaint_full_res": 0,
+                    "inpaint_full_res_padding": 32,
+                    "inpainting_fill": 1,
+                    "inpainting_mask_invert": 0,
+                    "mask_blur": 4,
+                    "mask_blur_x": 4,
+                    "mask_blur_y": 4,
+                    "n_iter": 1,
+                    "negative_prompt": "six fingers, deformity, extra fingers, deformed hands,, walks backwards, ugly, deformed, noisy, blurred, hands next to the face, distorted, out of focus, bad anatomy, extra limbs, bad face, bad hands, bad face, low quality body, worse quality body, bad body, bad anatomy drawing, mutation hands, mutation fingers, extra fingers, missing fingers, watermark, nsfw, (lack of clothes:1.2), (lack of detail:1.2), nsfw",
+                    "override_settings": {
+                        "sd_model_checkpoint": "realisticVisionV60B1_v51VAE.ckpt [392def60e4]"
+                    },
+                    "override_settings_restore_afterwards": true,
+                    "prompt": "Beautiful 18-year-old blonde girl walking down an autumn street with falling leaves, Colorful fallen leaves, fantastic face, beautiful coat, ((black boots)), (short skirt), gold and black, nice belt, nice bag, nice jewelry, fine texture of charcoal, detailed costume, Razumov style. sinister, matte film poster, golden section, trending on cgsociety, complex, epic, H. R. Giger and Beksinsky, highly detailed, vivid, production cinematic rendering of characters, fiction, m H. R. giger and Beksinsky, highly detailed, bright, cinematic character drawing, ultra-high quality model, perfect composition, beautiful detailing, Perfect face, (highly detailed facial features). Nature eyeshadow, (eyeliner: 1.1). Nature Eyebrown (highly detailed). intricate, iphotorealistic concept art, soft natural volumetric cinematic ideal light, chiaroscuro, award-winning photography, masterpiece, raphael, caravaggio, greg rutkowski, beeple, beksinsky, giger",
+                    "resize_mode": 0,
+                    "restore_faces": false,
+                    "s_churn": 0.0,
+                    "s_min_uncond": 0.0,
+                    "s_noise": 1.0,
+                    "s_tmax": null,
+                    "s_tmin": 0.0,
+                    "sampler_name": "DPM++ 2M Karras",
+                    "script_args": [],
+                    "script_name": null,
+                    "seed": 3112705277,
+                    "seed_enable_extras": true,
+                    "seed_resize_from_h": -1,
+                    "seed_resize_from_w": -1,
+                    "steps": 25,
+                    "styles": [],
+                    "subseed": -1,
+                    "subseed_strength": 0.3,
+                    "tiling": false,
+                    "width": "<input image width> (int)"
+                }
+            },
+            {
+                "style": "Broken Glass",
+                "img_url": "https://lh7-us.googleusercontent.com/u/0/sheets/APBGjha6_9-Q5SlTB0uBmaHl-GMwHnJyCV3rxOXlInG0ea85Urv1nJWHVioIHnJuBbr2quBi_Yf_4ilFXkBvu2x9GmoztbqBpPtZGxsAIWj6Wx6cRzfoHfJf068UTd7UUHPESQ8ift62rZ8laACut10VoRPM1Tw96DkyepZjSrH40FwqMXvTTBXntLNv9AalGp2NMg8nd7Ux2pUSvx9avCwUBLz_v4PEHYm0GhNmGqsRjQi-EtWlHdu1noZ1iHOXL_jKv0QPwnqNyUpyXOdY2CiUed1majF0FrwfIklHBghMZBO6kBudm54RuK_FI1gJSWkP_SdxU08gtwWTDLmDnU9V3AoCRNyXF1n0hpAFiFIbxjkYj6Ugc04-JHZQbL_LgCR8i9QW834niRlN-zFoW_kb9c_bLdGlKx87WLm0ozXC_c6H4AGbyraSjWFFDWT7Cex0dxhrLugBNkK9qtu0a6wyZmRWtpRnGQpL-iNxfVzZeAGLRK9Hqozz2QmMqsBza3bFR68NFAQf2E35foAjKF4gHHJ-L-BZIWMYYA9twUkvWvPo8WgyEgBIk0bTUiLWbkPpNsEzYGImcP2OXNRqh4pY3vDQYDbNOkWfux2QPYAS56IqSy83LoXP7xiHHPrmq765UE3WPxd57ch1AKncwalG6PX2yH_wDw3_4qE-tqphMfIceHNTJ6pkz8nIGrY-TjcT3-xpIj536BsZbUOyG4YxzBDVqWpOr0laAEuWp5LVa_xxXJ869ylpAdaVUk9rsgIo1mTABdccf6yJ5JF3ADgJ8JOQ4_rR7LUYj_OZ8tr40hS71DHN8pblqtipCXpwekCneJJqiMIErOWOzGVvC5v23J0Zd6KALzInkc353KwpnGKYEJ3BS2l0knRvi9rX-eyaUYUR9GzE6IGpwAm86HH7s3ZpFjLzH-henlNLVPI8hUH7ew3pjOgXcX15ZNL20Stu1gfdb3ABxg",
+                "payload": {
+                    "alwayson_scripts": {
+                        "roop": {
+                            "args": [
+                                "<face-img-base64>",
+                                true,
+                                "0",
+                                "/stable-diffusion-webui/models/roop/inswapper_128.onnx",
+                                "CodeFormer",
+                                1,
+                                "R-ESRGAN 4x+",
+                                1.25,
+                                1,
+                                false,
+                                true
+                            ]
+                        },
+                        "ControlNet": {
+                            "args": [
+                                {
+                                    "advanced_weighting": null,
+                                    "batch_images": "",
+                                    "control_mode": "Balanced",
+                                    "enabled": true,
+                                    "guidance_end": 1,
+                                    "guidance_start": 0,
+                                    "hr_option": "Both",
+                                    "image": null,
+                                    "inpaint_crop_input_image": false,
+                                    "input_mode": "simple",
+                                    "is_ui": true,
+                                    "loopback": false,
+                                    "low_vram": false,
+                                    "model": "control_v11p_sd15_openpose [cab727d4]",
+                                    "module": "openpose_full",
+                                    "output_dir": "",
+                                    "pixel_perfect": true,
+                                    "processor_res": 512,
+                                    "resize_mode": "Crop and Resize",
+                                    "save_detected_map": true,
+                                    "threshold_a": 100,
+                                    "threshold_b": 200,
+                                    "weight": 0.6
+                                }
+                            ]
+                        },
+                        "Extra options": {
+                            "args": []
+                        },
+                        "Hypertile": {
+                            "args": []
+                        },
+                        "Refiner": {
+                            "args": [
+                                false,
+                                "",
+                                0.8
+                            ]
+                        },
+                        "Seed": {
+                            "args": [
+                                -1,
+                                false,
+                                -1,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "batch_size": 1,
+                    "cfg_scale": 7,
+                    "comments": {},
+                    "denoising_strength": 0.75,
+                    "disable_extra_networks": false,
+                    "do_not_save_grid": false,
+                    "do_not_save_samples": false,
+                    "height": "<input image height> (int)",
+                    "image_cfg_scale": 1.5,
+                    "init_images": [
+                        "<sd-input-img-base64>"
+                    ],
+                    "initial_noise_multiplier": 1.0,
+                    "inpaint_full_res": 0,
+                    "inpaint_full_res_padding": 32,
+                    "inpainting_fill": 1,
+                    "inpainting_mask_invert": 0,
+                    "mask_blur": 4,
+                    "mask_blur_x": 4,
+                    "mask_blur_y": 4,
+                    "n_iter": 1,
+                    "negative_prompt": "six fingers, deformity, extra fingers, deformed hands,, walks backwards, ugly, deformed, noisy, blurred, hands next to the face, distorted, out of focus, bad anatomy, extra limbs, bad face, bad hands, bad face, low quality body, worse quality body, bad body, bad anatomy drawing, mutation hands, mutation fingers, extra fingers, missing fingers, watermark, nsfw, (lack of clothes:1.2), (lack of detail:1.2), nsfw",
+                    "override_settings": {
+                        "sd_model_checkpoint": "realisticVisionV60B1_v51VAE.ckpt [392def60e4]"
+                    },
+                    "override_settings_restore_afterwards": true,
+                    "prompt": "ashion model, on the street, dressed in the deep blue/gold style dark surrealism, dark black style, vibrant deep colors, ultra realistic, Broken Glass effect, no background, stunning, something that even doesn't exist, mythical being, energy, molecular, textures, iridescent and luminescent scales, Perfect face, highly detailed facial features. Nature eyeshadow, eyeliner. Nature Eyebrown highly detailed, breathtaking beauty, pure perfection, divine presence, unforgettable, impressive, breathtaking beauty, Volumetric light, auras, rays, vivid colors reflects",
+                    "resize_mode": 0,
+                    "restore_faces": false,
+                    "s_churn": 0.0,
+                    "s_min_uncond": 0.0,
+                    "s_noise": 1.0,
+                    "s_tmax": null,
+                    "s_tmin": 0.0,
+                    "sampler_name": "DPM++ 2M Karras",
+                    "script_args": [],
+                    "script_name": null,
+                    "seed": 1567276640,
+                    "seed_enable_extras": true,
+                    "seed_resize_from_h": -1,
+                    "seed_resize_from_w": -1,
+                    "steps": 25,
+                    "styles": [],
+                    "subseed": -1,
+                    "subseed_strength": 0.3,
+                    "tiling": false,
+                    "width": "<input image width> (int)"
+                }
+            }
+        ],
+        "Vintage": [
+            {
+                "style": "France",
+                "img_url": "https://lh7-us.googleusercontent.com/u/0/sheets/APBGjhafUGSaDdWgK_QAIW6sIbXPRTeXVrB1QCxcFMF0Z-2IHdjj41UkSePcqdfEwASg2emApdxvTalFVV-3s-hVcltdrbdTsfA0bPq-mJE5NEwqc6UDv4-7zts-Zl_y0FyyDRPFxDyzKVQG0eZdF_krAUF-NQd-jnDEid2xm7Iu8NYFPJo3ELOm3wBKqtzGPwLzhuWS6xhntyDFBx1M4N1MsrMtATd5iyChr3yIwHafFObRpPJo2YHCzqGHwQfLh5xNmg7GrXyCUXdCzfM1GXG3dD9X5o2nJNZHH-Vz31qV3eOwmGbODtqUQ_TPSHQ4_Im2EuPOJ88w5tlVwEG0DSlidMFkHh9qUnO4XJ0ivZvUHIXCi3l7nw_jgLEBp0PGr1K_84KHuz-GMjb4S1I4c46bP4tv1TeqJzjh4gN1AuJBVJg2_CtaGzg9GwUc6arQuImQjcaLD9FsVAWWFpf8iCcnTboiOpuHxaqLPob41gayWmFrUkIWYGbeF5wvA9GFM4KV6vA-eT436USJbvmehELRnKiSCa8PGmckG3y0eAem2BuH7ueKxavpa5jku0b14bymcY1tUbDnKkXP2fLs-0tP_-_7gZqV27tidRyrNkTZqy0mIYvkiKW7gCl_xpCmgrtgsN7Th--Wbthw9hjgxLZ7s0mz4R617jVM5L3GYR_KGoN6O-rC2PanJXFqwycLf3GgVzJYkZBelSvCL-PWBFaL-qkQnsrO_SyYqORf3ucEhCdJ8yX4kkjmWk9xUsopqwUQXJl66Ckf-2Xcd_eGouCd0EPLzacrmE4RnjFQvcNN6qoATOwGpBs1Ibqo2_PNpHAHbtj2L3imoMWDGIeEPzhcsiEsWi_BoeGpST76uesQwqa76q7MxRg2aifIO_lg9zStXBkWwnkxUoUopT5tirhFj568xT6rB4zbBDbrxP88nEagCmHRnwQ98bxdPb0G7hnaHLS4uFsw",
+                "payload": {
+                    "alwayson_scripts": {
+                        "roop": {
+                            "args": [
+                                "<face-img-base64>",
+                                true,
+                                "0",
+                                "/stable-diffusion-webui/models/roop/inswapper_128.onnx",
+                                "CodeFormer",
+                                1,
+                                "R-ESRGAN 4x+",
+                                1.25,
+                                1,
+                                false,
+                                true
+                            ]
+                        },
+                        "ControlNet": {
+                            "args": [
+                                {
+                                    "advanced_weighting": null,
+                                    "batch_images": "",
+                                    "control_mode": "Balanced",
+                                    "enabled": true,
+                                    "guidance_end": 1,
+                                    "guidance_start": 0,
+                                    "hr_option": "Both",
+                                    "image": null,
+                                    "inpaint_crop_input_image": false,
+                                    "input_mode": "simple",
+                                    "is_ui": true,
+                                    "loopback": false,
+                                    "low_vram": false,
+                                    "model": "control_v11p_sd15_openpose [cab727d4]",
+                                    "module": "openpose_full",
+                                    "output_dir": "",
+                                    "pixel_perfect": true,
+                                    "processor_res": 512,
+                                    "resize_mode": "Crop and Resize",
+                                    "save_detected_map": true,
+                                    "threshold_a": 100,
+                                    "threshold_b": 200,
+                                    "weight": 0.6
+                                }
+                            ]
+                        },
+                        "Extra options": {
+                            "args": []
+                        },
+                        "Hypertile": {
+                            "args": []
+                        },
+                        "Refiner": {
+                            "args": [
+                                false,
+                                "",
+                                0.8
+                            ]
+                        },
+                        "Seed": {
+                            "args": [
+                                -1,
+                                false,
+                                -1,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "batch_size": 1,
+                    "cfg_scale": 7,
+                    "comments": {},
+                    "denoising_strength": 0.75,
+                    "disable_extra_networks": false,
+                    "do_not_save_grid": false,
+                    "do_not_save_samples": false,
+                    "height": "<input image height> (int)",
+                    "image_cfg_scale": 1.5,
+                    "init_images": [
+                        "<sd-input-img-base64>"
+                    ],
+                    "initial_noise_multiplier": 1.0,
+                    "inpaint_full_res": 0,
+                    "inpaint_full_res_padding": 32,
+                    "inpainting_fill": 1,
+                    "inpainting_mask_invert": 0,
+                    "mask_blur": 4,
+                    "mask_blur_x": 4,
+                    "mask_blur_y": 4,
+                    "n_iter": 1,
+                    "negative_prompt": "six fingers, deformity, extra fingers, deformed hands,, walks backwards, ugly, deformed, noisy, blurred, hands next to the face, distorted, out of focus, bad anatomy, extra limbs, bad face, bad hands, bad face, low quality body, worse quality body, bad body, bad anatomy drawing, mutation hands, mutation fingers, extra fingers, missing fingers, watermark, nsfw, (lack of clothes:1.2), (lack of detail:1.2), nsfw, glasses",
+                    "override_settings": {
+                        "sd_model_checkpoint": "realisticVisionV60B1_v51VAE.ckpt [392def60e4]"
+                    },
+                    "override_settings_restore_afterwards": true,
+                    "prompt": "Beautiful 18-year-old blonde girl, vintage lady, 1940’s, 1950’s, vintage photography, vintage, vintage photographvisage précis scarlette o'hara, background Paris, 32k high definition, paris, Parisian, vintage fashion, paris fashion, Mysterious, Perfect face, highly detailed facial features. Nature eyeshadow, eyeliner. Nature Eyebrown highly detailed, beautiful smile",
+                    "resize_mode": 0,
+                    "restore_faces": false,
+                    "s_churn": 0.0,
+                    "s_min_uncond": 0.0,
+                    "s_noise": 1.0,
+                    "s_tmax": null,
+                    "s_tmin": 0.0,
+                    "sampler_name": "DPM++ 2M Karras",
+                    "script_args": [],
+                    "script_name": null,
+                    "seed": 1011431035,
+                    "seed_enable_extras": true,
+                    "seed_resize_from_h": -1,
+                    "seed_resize_from_w": -1,
+                    "steps": 25,
+                    "styles": [],
+                    "subseed": -1,
+                    "subseed_strength": 0.3,
+                    "tiling": false,
+                    "width": "<input image width> (int)"
+                }
+            },
+            {
+                "style": "Garden",
+                "img_url": "https://lh7-us.googleusercontent.com/u/0/sheets/APBGjhaHsj_EtK0oOlk4TaCdbIyQnzRQ7KUOw8hZr31uAwhyfOWaaRmu2QNrXn6UOENJbeIqY1-eqmFpqNyzlHa63k0CYGvR7c9WseeOLd7H5CO-6zV4jdMcGw7fFSehx9xr4J6VdsHxmkypltnuOzJb6FlRmAye41rhFdmlFe7w5IqQ5r0Wuru5hEp03-6kAFh9R70vwlYfKcC66xfkqneH2GZICZNgLrYQoOk25r2TL5JhrMW7CcrtqqYr6ULsudFZp3PoAWChf5ZCQcJoHSQ3GWYsZEhvCW1yIoS0t5b714tr6O3DhiBNBvaBmiWpMD1Go2DMwEn5aPwzCnOeMF2mpkXM-dso6sHEMPUe2U2j404CxclHouuVq-qOX5KllSZTV_JKgZvqXjUtCnWbRgfHoUMvxumrO75ydltbPpgneEPkrqsSY5yj2gPbzjO4bQBlxIVDHkMK4rpW9vrY3TWxnlHlrDPj00tuGcD2KCfS77IMD4NHcXy2S3Rw0jO6ZB3mQhLgClG-n1UUgHaDoRz1bn6kab-Vck3tkwkhCVaYGmP_yrPnSjvsKMpS5ya0mpBg3uvrafXbsqBfK8ttlEE24wdnsTCCqQ20YK9ekcldq3M35DHLil4LQgj_cQIlS0hwaEoMLp5E_nwWNbm-Xg7ebXgilM_TFh5n9avD1kk78In-LYn6q340w_I_b1m6cnHovJXQYBQnlM3WIATpnkK0m_BiJuJmBVkGv7YgkWJVXDtIhAhRo45Ucka9an3iSh4ia-hq_Kg9TbH04gSF4Xj2sIaHy04xXiEnVIPObeVvc6BVRjS9DUWnCKfjypTvi7Y-azi-6aH9Kp8s7trmUyNQzuJ-qLxbiaTRSWmJXUEZfa-2MecWpuY-7udH7_XmOOHeVB74uTqpM5yTF_Zpd3To-wPRSJZnviQX4_FE-pdY-1EmOQtDP6ivUxLxmcTU12ApUWD3vj2n",
+                "payload": {
+                    "alwayson_scripts": {
+                        "roop": {
+                            "args": [
+                                "<face-img-base64>",
+                                true,
+                                "0",
+                                "/stable-diffusion-webui/models/roop/inswapper_128.onnx",
+                                "CodeFormer",
+                                1,
+                                "R-ESRGAN 4x+",
+                                1.25,
+                                1,
+                                false,
+                                true
+                            ]
+                        },
+                        "ControlNet": {
+                            "args": [
+                                {
+                                    "advanced_weighting": null,
+                                    "batch_images": "",
+                                    "control_mode": "Balanced",
+                                    "enabled": true,
+                                    "guidance_end": 1,
+                                    "guidance_start": 0,
+                                    "hr_option": "Both",
+                                    "image": null,
+                                    "inpaint_crop_input_image": false,
+                                    "input_mode": "simple",
+                                    "is_ui": true,
+                                    "loopback": false,
+                                    "low_vram": false,
+                                    "model": "control_v11p_sd15_openpose [cab727d4]",
+                                    "module": "openpose_full",
+                                    "output_dir": "",
+                                    "pixel_perfect": true,
+                                    "processor_res": 512,
+                                    "resize_mode": "Crop and Resize",
+                                    "save_detected_map": true,
+                                    "threshold_a": 100,
+                                    "threshold_b": 200,
+                                    "weight": 0.6
+                                }
+                            ]
+                        },
+                        "Extra options": {
+                            "args": []
+                        },
+                        "Hypertile": {
+                            "args": []
+                        },
+                        "Refiner": {
+                            "args": [
+                                false,
+                                "",
+                                0.8
+                            ]
+                        },
+                        "Seed": {
+                            "args": [
+                                -1,
+                                false,
+                                -1,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "batch_size": 1,
+                    "cfg_scale": 7,
+                    "comments": {},
+                    "denoising_strength": 0.75,
+                    "disable_extra_networks": false,
+                    "do_not_save_grid": false,
+                    "do_not_save_samples": false,
+                    "height": "<input image height> (int)",
+                    "image_cfg_scale": 1.5,
+                    "init_images": [
+                        "<sd-input-img-base64>"
+                    ],
+                    "initial_noise_multiplier": 1.0,
+                    "inpaint_full_res": 0,
+                    "inpaint_full_res_padding": 32,
+                    "inpainting_fill": 1,
+                    "inpainting_mask_invert": 0,
+                    "mask_blur": 4,
+                    "mask_blur_x": 4,
+                    "mask_blur_y": 4,
+                    "n_iter": 1,
+                    "negative_prompt": "six fingers, deformity, extra fingers, deformed hands,, walks backwards, ugly, deformed, noisy, blurred, hands next to the face, distorted, out of focus, bad anatomy, extra limbs, bad face, bad hands, bad face, low quality body, worse quality body, bad body, bad anatomy drawing, mutation hands, mutation fingers, extra fingers, missing fingers, watermark, nsfw, (lack of clothes:1.2), (lack of detail:1.2), nsfw, glasses",
+                    "override_settings": {
+                        "sd_model_checkpoint": "realisticVisionV60B1_v51VAE.ckpt [392def60e4]"
+                    },
+                    "override_settings_restore_afterwards": true,
+                    "prompt": "Beautiful 18-year-old blonde girl, vintage lady, 1940’s, 1950’s, vintage photography, vintage, 32k high definition, vintage fashion, paris fashion, Mysterious, Perfect face, highly detailed facial features. Nature eyeshadow, eyeliner, beautiful smile. Nature background, Outdoor setting, gentle sunlight, flowers around, romantic, poetic, fresh French flowers",
+                    "resize_mode": 0,
+                    "restore_faces": false,
+                    "s_churn": 0.0,
+                    "s_min_uncond": 0.0,
+                    "s_noise": 1.0,
+                    "s_tmax": null,
+                    "s_tmin": 0.0,
+                    "sampler_name": "DPM++ 2M Karras",
+                    "script_args": [],
+                    "script_name": null,
+                    "seed": 1011431035,
+                    "seed_enable_extras": true,
+                    "seed_resize_from_h": -1,
+                    "seed_resize_from_w": -1,
+                    "steps": 25,
+                    "styles": [],
+                    "subseed": -1,
+                    "subseed_strength": 0.3,
+                    "tiling": false,
+                    "width": "<input image width> (int)"
+                }
+            }
+        ]
+    },
+    "Hair": {
+        "Female": [
+            {
+                "style": "Bob 1",
+                "img_url": "https://lh7-us.googleusercontent.com/u/0/sheets/APBGjhYC6jWZ0yrDtTVUdA4qN3QFTjwa8QAKyljiYLgs58GazbwC2gI44K6dahtG1ROzNGvMmhCg3C9oyxUKzRC1QIqZRgSlNfcbouYMIgxotn0_DTk1PER6OWACLltzJCYeCSO8BzM6s2HUKFoFRPb4d4qqi67naJBnC2S0WnLK8Fy4OVChBOuF6Sj38tsDWBCMg8CU-5w9CJwFb9TnFtsn8V1WElW5ZGhFFupcjvTA4HSclsKUy3gCNleBd3-IFrbZythMmYM__Y_hhGuQjlRXuOMJr28KzQjyGG5DZbdA_0mtOl9LMbe-trNC8fbFUJTF4nm3BP3bt6STPOTiue_zJ_MvkuUAxRxDLQ93BxesKKS_4fN9hg6_-BBccnP5iNz2cDyOfmdMiFErCPRMBFeQuQKQYFE37Uvuh3U2y9gE2EdUj7oXNvXLN42HD2iDGL7XpNwLoZ7tcPmg0uaO76DDa410npGxP5j0hdYkDbsK_tqKJKIqDlR1nPz5fn8V64SPCdA1bAJ4R78p8sUFeovb0_ggUDzkAl3irzuFAmjEKTPy8zf7_hq_2rnDKErmoOr03BVNmmRVAeOP1B81KASwj2dDP2ohxtddVlTE3NPNgx5-qjuJjKaq68JJMEu-ZOr5LyyGzr3rczio3TxOjyXtN_5fQ8TjXSFRyeShp29dRT0t9mFEF5WeQ5YBY4km21vRjUYfdYbnmo2iXJY8YVK2zex6zBuDrFKVelt-D6huLAJ890Bbl2UTpimupTIhcupADZDtbB9KpZz9iP0lcbbaRyjzJoEj30xvuRLEnZ_GcNgEXxRUPeQYjS4pBaLlomRXxYzfF2XN5dt6WXxJMPy-IhFpszvdAafHvK6-9MNmzDU8qazkxAly1FehZo-l4TJPJS8B44HVr9KaCvT-IbWMgBHdw1w-nEBf66-4ZOJoTqXM1zIYRxiXwSmEm3PMdA7CU1PGi4qW",
+                "payload": {
+                    "negative_prompt": "(bangs), makekup, formed, noisy, blurred, hands next to the face, distorted, out of focus, bad anatomy, extra limbs, bad face, bad hands, bad face, low quality body, worse quality body, bad body, bad anatomy drawing, mutation hands, mutation fingers, extra fingers, missing fingers, watermark, nsfw, (lack of clothes:1.2), (lack of detail:1.2), nsfw",
+                    "override_settings": {
+                        "sd_model_checkpoint": "vivcharmix_V5NewEra.safetensors [a3d7311d85]"
+                    },
+                    "override_settings_restore_afterwards": true,
+                    "prompt": "22 years old European girl model, (bob hairstyle:1.2), (short hair:1.1), (param_hair color ), street fashion, (natural beauty), Portrait, perfect teeth, (beautiful smile), upper body, front, looking straight at the camera, Macro mode, Shot with a Sony G Master 24-8mm f/2.8 lens, ISO 200, f/5.6, and a shutter speed of 1/100s",
+                    "batch_size": 1,
+                    "cfg_scale": 7,
+                    "height": 512,
+                    "width": 512,
+                    "seed": 1519470413,
+                    "seed_enable_extras": true,
+                    "seed_resize_from_h": -1,
+                    "seed_resize_from_w": -1,
+                    "steps": 20,
+                    "styles": [],
+                    "subseed": -1,
+                    "subseed_strength": 0.3,
+                    "sampler_name": "DPM++ 2M Karras",
+                    "alwayson_scripts": {
+                        "API payload": {
+                            "args": []
+                        },
+                        "roop": {
+                            "args": [
+                                "<face_img_base64>",
+                                true,
+                                "0",
+                                "/stable-diffusion-webui/models/roop/inswapper_128.onnx",
+                                "CodeFormer",
+                                1,
+                                "R-ESRGAN 4x+",
+                                1.5,
+                                1,
+                                false,
+                                true
+                            ]
+                        },
+                        "Extra options": {
+                            "args": []
+                        },
+                        "Hypertile": {
+                            "args": []
+                        },
+                        "Refiner": {
+                            "args": [
+                                false,
+                                "",
+                                0.8
+                            ]
+                        },
+                        "Seed": {
+                            "args": [
+                                1009142766,
+                                false,
+                                -1,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "comments": {},
+                    "disable_extra_networks": false,
+                    "do_not_save_grid": false,
+                    "do_not_save_samples": false,
+                    "enable_hr": false,
+                    "hr_negative_prompt": "",
+                    "hr_prompt": "",
+                    "hr_resize_x": 0,
+                    "hr_resize_y": 0,
+                    "hr_scale": 2,
+                    "hr_second_pass_steps": 0,
+                    "hr_upscaler": "Latent",
+                    "n_iter": 1,
+                    "restore_faces": false,
+                    "s_churn": 0.0,
+                    "s_min_uncond": 0.0,
+                    "s_noise": 1.0,
+                    "s_tmax": null,
+                    "s_tmin": 0.0,
+                    "script_args": [],
+                    "script_name": null,
+                    "tiling": false
+                }
+            },
+            {
+                "style": "Bob 2",
+                "img_url": "https://lh7-us.googleusercontent.com/u/0/sheets/APBGjhbWHgUXogb_BrYWRctFnZHwqFl7SojIWq8XkhE26G1S5NhZOu2MS19X_2s8afUcZm8GdzN40zpRCaMy62fuDGQjtrrbXa8dV_kQyJqWOox0kVaW2RGWMK-VZ6cLBBP9s3BT-St8NSPJDU5pzzeRSWzXYdMmuRH078S6-SNKE_ctcxUe2cAjp1Y27aKLZvh1015NYxA4q097JdjmhLmymKENMIGvl6yRRVqJ0v-KigT7NipG_-CL2EpKzgO0WtPUXxtjobcf9Gz1HyqWha4j45b3wwJsPZW_xH6iteQgfiQEo2yWoSuhLUtO2mnBq8ZvBcEqWyy3jKFuX0H3emTUzWmaDHbyig2pngtSlp2q9tqG-H0u2ohgMEs5WLlbaMVV5weXEwuJMe1GPM0JTgK4nv7g0iPynKRxls4QWwAxkE4AyG5iSaPLsnitc8GXBKyTN1h0qb6e7j_phiNN13QJJno3cNC3cc-ro5UbRLsl9tu4J9BpPU4hPydjEQtGggilIgvH2RyAg4xpaJjuyfJLS8QofRLg8-mHMlpHIcLfLVmWIva9id8vJ7mCWnX2lSQqiNRqLeqWKnThmg2SxbOhffiv0dKKGdRHoqihP8dNTrRA6NwhR5CxpjXvico0lGwz76XJ2VNKDQTQj8heCofeE08vgzeHITSu0vsTuvgMdbPsjusRUgD34NEnPf42j3AcesCBTTFNLJ2uDd6vPNlB9bbkicJQMUysQcbw6doFtTk6kcVS0XfKZOLSlTvdpbu3r5Y6U5V2SF6Jh2fYSGohrSF1Zm_weinzqpzmsGCKGkyTLZBv8Mik4BdQKB23x_VeVp2kbVb2KlBfI8AXLwoz9Nf3z3EKHkZLQ8Bjn3elCJdbULPFlkvIkzr2lF58r_7UTYbQ-b_s1BMBb_vuOh5bSAFllLW2zD2q_zfyTvlFjZviDArZR1W4HkcLUsI0rESQdY31ozG2Eg",
+                "payload": {
+                    "negative_prompt": "(bangs), makekup, formed, noisy, blurred, hands next to the face, distorted, out of focus, bad anatomy, extra limbs, bad face, bad hands, bad face, low quality body, worse quality body, bad body, bad anatomy drawing, mutation hands, mutation fingers, extra fingers, missing fingers, watermark, nsfw, (lack of clothes:1.2), (lack of detail:1.2), nsfw",
+                    "override_settings": {
+                        "sd_model_checkpoint": "vivcharmix_V5NewEra.safetensors [a3d7311d85]"
+                    },
+                    "override_settings_restore_afterwards": true,
+                    "prompt": "22 years old European girl model, (bob hairstyle:1.2), (shoulder-length, medium hair:1.1) , (param_hair color ), street fashion, (natural beauty), Portrait, perfect teeth, (beautiful smile), upper body, front, looking straight at the camera, Macro mode, Shot with a Sony G Master 24-8mm f/2.8 lens, ISO 200, f/5.6, and a shutter speed of 1/100s",
+                    "batch_size": 1,
+                    "cfg_scale": 7,
+                    "height": 512,
+                    "width": 512,
+                    "seed": 1519470413,
+                    "seed_enable_extras": true,
+                    "seed_resize_from_h": -1,
+                    "seed_resize_from_w": -1,
+                    "steps": 20,
+                    "styles": [],
+                    "subseed": -1,
+                    "subseed_strength": 0.3,
+                    "sampler_name": "DPM++ 2M Karras",
+                    "alwayson_scripts": {
+                        "API payload": {
+                            "args": []
+                        },
+                        "roop": {
+                            "args": [
+                                "<face_img_base64>",
+                                true,
+                                "0",
+                                "/stable-diffusion-webui/models/roop/inswapper_128.onnx",
+                                "CodeFormer",
+                                1,
+                                "R-ESRGAN 4x+",
+                                1.5,
+                                1,
+                                false,
+                                true
+                            ]
+                        },
+                        "Extra options": {
+                            "args": []
+                        },
+                        "Hypertile": {
+                            "args": []
+                        },
+                        "Refiner": {
+                            "args": [
+                                false,
+                                "",
+                                0.8
+                            ]
+                        },
+                        "Seed": {
+                            "args": [
+                                1009142766,
+                                false,
+                                -1,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "comments": {},
+                    "disable_extra_networks": false,
+                    "do_not_save_grid": false,
+                    "do_not_save_samples": false,
+                    "enable_hr": false,
+                    "hr_negative_prompt": "",
+                    "hr_prompt": "",
+                    "hr_resize_x": 0,
+                    "hr_resize_y": 0,
+                    "hr_scale": 2,
+                    "hr_second_pass_steps": 0,
+                    "hr_upscaler": "Latent",
+                    "n_iter": 1,
+                    "restore_faces": false,
+                    "s_churn": 0.0,
+                    "s_min_uncond": 0.0,
+                    "s_noise": 1.0,
+                    "s_tmax": null,
+                    "s_tmin": 0.0,
+                    "script_args": [],
+                    "script_name": null,
+                    "tiling": false
+                }
+            }
+        ],
+        "Male": [
+            {
+                "style": "Short Curly Quiff",
+                "img_url": "https://lh7-us.googleusercontent.com/u/0/sheets/APBGjhYaxug8pM_DvQFUyNpKS4VnhAc7cB9ortXa0HcnF4A8mIG8rjS5f0cRooifYMjEMf0XeQOO4hhUKrosskA-bKtJ2TQ0sZpv47CMB2wE0OnuKHFuExvLW_lHcbjromCmO1m1UccbErhBugAdN6q9QLqg0ErkSSm1Og5nbBAG6HA51x9gTJ2VJSHGqsaEO5O9stTqUHAqeFPMVxcaVszRmeyROTtOY8SH6iCCe7H2QuWl4omPXvQaAfBAiNEzOea_gDDPBRjtZSmeGm5v9Fx-nUzKFwthKoQ1X1y1aBXv74SVINpiUHI8jOw7Uz4TVSd4OzXu5dtzBLEnN4eqwUF4UFIFDQ5uBVW0m1N8LcE38nR7EJWaEJUBgQSxTIuOu9WbufC73St1wLRh_6Wm9pq--ZFdVYUC5xmrRX6M0-c_LLtzD2znAuCA4TaZCckxv2RCUvgAsZ7Tru_fBnZfdzeVNfM4CHRxaQV-wl6ln7efPcNJztD0LIsmPId8dqH8LBFmDy1Q22gPpcnmZrV_xGjTwIGMgS-9rh9cXKRa9jTwYrD-uV-YL8BAHQPDz7pMSjbsNlpjw_w1mhmFlruRR5y7XKW7EgCIk-msQ2uetOdZkx00qVGVtS0LI-4D0vZ5ba4X205zomRpIKlkfgPeGM3PjKpJQuwZLZ6-Uq1U6mlIVncEj-uTAotPdgvEXrL_V0UI-i3_CaP5JUssFRfLR2FDGiXWhNma0NKaIdhINaqvTLSUZiY_tUmRUogffOHnBjaK7w-0bKC1mBgy1lXyb7tPsk4R2mtRZuTx2neurnVd6gSWiHh-6-SrEYufHyaivJFW0UJMcSRUxoalwYlT5V-waBztybsH4LpL6jaEu6w7jDsDGNQ7hhI2D2lT_mwKU7abg1MQxV271s2HymtJ1iacqBeKK4ita8VomgsLP5DwrRZd3gbgK9iVLhYOAnPN-681vs9mVRR9xg",
+                "payload": {
+                    "negative_prompt": "makekup, formed, noisy, blurred, hands next to the face, distorted, out of focus, bad anatomy, extra limbs, bad face, bad hands, bad face, low quality body, worse quality body, bad body, bad anatomy drawing, mutation hands, mutation fingers, extra fingers, missing fingers, watermark, nsfw, (lack of clothes:1.2), (lack of detail:1.2), nsfw",
+                    "override_settings": {
+                        "sd_model_checkpoint": "vivcharmix_V5NewEra.safetensors [a3d7311d85]"
+                    },
+                    "override_settings_restore_afterwards": true,
+                    "prompt": "1 handsome man, (Short Curly Quiff Hairstyle:1.2), (param_hair color ), street fashion, Portrait, perfect teeth, (beautiful smile),upper body, front, looking straight at the camera, Macro mode, Shot with a Sony G Master 24-8mm f/2.8 lens, ISO 200, f/5.6, and a shutter speed of 1/100s",
+                    "batch_size": 1,
+                    "cfg_scale": 7,
+                    "height": 512,
+                    "width": 512,
+                    "seed": 1519470413,
+                    "seed_enable_extras": true,
+                    "seed_resize_from_h": -1,
+                    "seed_resize_from_w": -1,
+                    "steps": 20,
+                    "styles": [],
+                    "subseed": 3047230600,
+                    "subseed_strength": 0.3,
+                    "sampler_name": "DPM++ 2M Karras",
+                    "alwayson_scripts": {
+                        "API payload": {
+                            "args": []
+                        },
+                        "roop": {
+                            "args": [
+                                "<face_img_base64>",
+                                true,
+                                "0",
+                                "/stable-diffusion-webui/models/roop/inswapper_128.onnx",
+                                "CodeFormer",
+                                1,
+                                "R-ESRGAN 4x+",
+                                1.5,
+                                1,
+                                false,
+                                true
+                            ]
+                        },
+                        "Extra options": {
+                            "args": []
+                        },
+                        "Hypertile": {
+                            "args": []
+                        },
+                        "Refiner": {
+                            "args": [
+                                false,
+                                "",
+                                0.8
+                            ]
+                        },
+                        "Seed": {
+                            "args": [
+                                1009142766,
+                                false,
+                                -1,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "comments": {},
+                    "disable_extra_networks": false,
+                    "do_not_save_grid": false,
+                    "do_not_save_samples": false,
+                    "enable_hr": false,
+                    "hr_negative_prompt": "",
+                    "hr_prompt": "",
+                    "hr_resize_x": 0,
+                    "hr_resize_y": 0,
+                    "hr_scale": 2,
+                    "hr_second_pass_steps": 0,
+                    "hr_upscaler": "Latent",
+                    "n_iter": 1,
+                    "restore_faces": false,
+                    "s_churn": 0.0,
+                    "s_min_uncond": 0.0,
+                    "s_noise": 1.0,
+                    "s_tmax": null,
+                    "s_tmin": 0.0,
+                    "script_args": [],
+                    "script_name": null,
+                    "tiling": false
+                }
+            },
+            {
+                "style": "Fade & Spiked Wavy",
+                "img_url": "https://lh7-us.googleusercontent.com/u/0/sheets/APBGjhacVCiMCxBOBcSAF8n7ooDMERqB_1L3cglKntuFVT2csGBujodXZRbM9HZPTuyZnd3V0W78RmpR1knbbZCFKlHIx9uDU45bOtexANmHH0I6tH1AatdLEKJFEK-1RlL26Q_r7benaa140UsIed7FUjDBD0vZmT90NiT5wmsMOYq0fIQPyYGRcguUosiNjHJNZamWFmgKOVrs1Mah27MkyzPTFLDFDMG2-4hviTyGEs-VpgDWs9iYioGUYdBsqWaqrrLQVxd6yQ2w0Xzk14hmCxdZmFyoKftcQQ_hys9RnIbQYWXWU1b4t3Mxuw7X8yYiyNIEVQ9ibNSP-3JbV_WHpkaz_u4viLRS53D8uBJ5YOLz58dK4IDCeLHi9dCjQKGFKJiCrFHk103sL0GeO5X7cGiiLii4OHOTkuJqV8zgV9bcUTo4wRmRyaHLTVW5qlxpww0j6ZYoNk0REzT997RfSxIFNG6QWVvtbykFx27YXEMiXUhOWbs1926Zsf6-NGC8ep0cNmllcDXuKMgF26UBgEpwESRTZhku9Fxr4-K1r3dQuv2ESiF-Ux7t-Nv8rf450ZNcKB8hQNL8t_SX2Ch3m1MEMa-dn9ZGsqkvodYbCG5yrF2z1rPtNc7oIsl6XZicz6YGR0Gf3VNDC1nkrJSFv4qRSVlE1gyfXgkphdPE75WJdNWOT5U3DMjuHyNyXh_-3mpVmEMb2yFzAdpbVOS5f_DyuWUJUrBtYjijjqaQoQ9Dxp98j1n7jJ5gyDBiAZPC7e98EsdjX4a-EAUHvql73lI69oqMCN0X-77VD9Gjt3RozwtFsmKhfPTCW-ybLSKmVdTmF12RTNUUVnStTimwZ6Dv6A0V9yK8LnA8gd8oaEWg1TEO6K9Oz8ojrYh0GKZSi4FHD5An1g31xUWvf0dQ6svBqYHlq28_XM7bTHg96lGynqqFJ9q8HG26ArqMD50BEmQeu5gmHw",
+                "payload": {
+                    "negative_prompt": "makekup, formed, noisy, blurred, hands next to the face, distorted, out of focus, bad anatomy, extra limbs, bad face, bad hands, bad face, low quality body, worse quality body, bad body, bad anatomy drawing, mutation hands, mutation fingers, extra fingers, missing fingers, watermark, nsfw, (lack of clothes:1.2), (lack of detail:1.2), nsfw",
+                    "override_settings": {
+                        "sd_model_checkpoint": "vivcharmix_V5NewEra.safetensors [a3d7311d85]"
+                    },
+                    "override_settings_restore_afterwards": true,
+                    "prompt": "1 handsome man, (High Temp Fade & Short Spiked Wavy  Hairstyle:1.2), (param_hair color ), street fashion, Portrait, perfect teeth, (beautiful smile),upper body, front, looking straight at the camera, Macro mode, Shot with a Sony G Master 24-8mm f/2.8 lens, ISO 200, f/5.6, and a shutter speed of 1/100s",
+                    "batch_size": 1,
+                    "cfg_scale": 7,
+                    "height": 512,
+                    "width": 512,
+                    "seed": 1519470413,
+                    "seed_enable_extras": true,
+                    "seed_resize_from_h": -1,
+                    "seed_resize_from_w": -1,
+                    "steps": 20,
+                    "styles": [],
+                    "subseed": 3047230600,
+                    "subseed_strength": 0.3,
+                    "sampler_name": "DPM++ 2M Karras",
+                    "alwayson_scripts": {
+                        "API payload": {
+                            "args": []
+                        },
+                        "roop": {
+                            "args": [
+                                "<face_img_base64>",
+                                true,
+                                "0",
+                                "/stable-diffusion-webui/models/roop/inswapper_128.onnx",
+                                "CodeFormer",
+                                1,
+                                "R-ESRGAN 4x+",
+                                1.5,
+                                1,
+                                false,
+                                true
+                            ]
+                        },
+                        "Extra options": {
+                            "args": []
+                        },
+                        "Hypertile": {
+                            "args": []
+                        },
+                        "Refiner": {
+                            "args": [
+                                false,
+                                "",
+                                0.8
+                            ]
+                        },
+                        "Seed": {
+                            "args": [
+                                1009142766,
+                                false,
+                                -1,
+                                0,
+                                0,
+                                0
+                            ]
+                        }
+                    },
+                    "comments": {},
+                    "disable_extra_networks": false,
+                    "do_not_save_grid": false,
+                    "do_not_save_samples": false,
+                    "enable_hr": false,
+                    "hr_negative_prompt": "",
+                    "hr_prompt": "",
+                    "hr_resize_x": 0,
+                    "hr_resize_y": 0,
+                    "hr_scale": 2,
+                    "hr_second_pass_steps": 0,
+                    "hr_upscaler": "Latent",
+                    "n_iter": 1,
+                    "restore_faces": false,
+                    "s_churn": 0.0,
+                    "s_min_uncond": 0.0,
+                    "s_noise": 1.0,
+                    "s_tmax": null,
+                    "s_tmin": 0.0,
+                    "script_args": [],
+                    "script_name": null,
+                    "tiling": false
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo
+    container_name: my-mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: vtd@123!@#
+      MONGO_INITDB_DATABASE: mydatabase
+    ports:
+      - "27017:27017"
+
+# docker run --name mongodb -p 27017:27017 -v ~/mongo-data:/data/db mongo:latest
