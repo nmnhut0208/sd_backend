@@ -8,6 +8,7 @@ from aiohttp import BasicAuth
 import base64
 from PIL import Image
 from io import BytesIO
+import json
 from schemas.schemas import Item, ItemsResponse, MakeupRequest, ClothesRequest, HairRequest, PostModelResponse
 
 def get_image_dimensions(base64_str: str):
@@ -20,24 +21,13 @@ class FlutterBackendEndpoints:
         self.logger = logger
         self.router = APIRouter()
         self.crud = crud
+        self.collection_name = 'flutter'
         self.ai_type = {
             "MakeUp": "sd-img2img",
             "Clothes": "sd-img2img",
             "Hair": "sd-txt2img"
         }
-        self.color = {
-            "red": "#A61414",
-            "ginger": "#6D4730",
-            "blonde": "#D9B380",
-            "gray": "#838794",
-            "white": "#F2F2F2",
-            "black": "#242424",
-            "brown": "#312324",
-            "pink": "#E27589",
-            "blue tiffany": "#56BEBA",
-            "blue sapphire": "#0067A5",
-            "colorful": "linear-gradient(160.31deg, #FC4848 0%, #FB9145 16.5%, #F3E246 34%, #58F955 51.5%, #5BF8F8 68%, #5578F3 83%, #F367F5 100%)"
-        }
+        self.colors = json.load(open('assets/colors.json'))
         # print("nhut: ", self.crud.db)
         # basic auth
         # self.auth = BasicAuth(config.USERNAME, config.PASSWORD)
@@ -62,7 +52,7 @@ class FlutterBackendEndpoints:
         #         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
         # read by category
-        @self.router.get("/get_img/{category}", response_model=ItemsResponse)
+        @self.router.get("/flutter/get_img/{category}", response_model=ItemsResponse)
         async def get_img(category: str):
             """
             Get all items from the database by category (all if category is "all") .
@@ -72,14 +62,14 @@ class FlutterBackendEndpoints:
                 List[ItemResponse]: A list of items.
             """
             try:
-                data = await self.crud.read_by_category('items', category)
+                data = await self.crud.read_by_category(self.collection_name, category)
                 items = [Item(**item) for item in data]
                 return ItemsResponse(items=items)
             except Exception as e:
                 # self.logger.error({"error": str(e)})
                 raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
-        @self.router.post("/makeup", response_model=PostModelResponse)
+        @self.router.post("/flutter/makeup", response_model=PostModelResponse)
         async def makeup(request: MakeupRequest):
             """
             Make up the image with the given style.
@@ -88,7 +78,7 @@ class FlutterBackendEndpoints:
             return:
                 PostModelResponse: The response object containing the request id.
             """
-            data = await self.crud.read_by_style('items', request.style)
+            data = await self.crud.read_by_style(self.collection_name, request.style)
             payload = data['payload']
             payload['init_images'] = [request.img]
             width, height = get_image_dimensions(request.img)
@@ -108,7 +98,7 @@ class FlutterBackendEndpoints:
                 # self.logger.error({"error": str(e)})
                 raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
-        @self.router.post("/clothes", response_model=PostModelResponse)
+        @self.router.post("/flutter/clothes", response_model=PostModelResponse)
         async def clothes(request: ClothesRequest):
             """
             Change the style of the clothes of the image.
@@ -118,7 +108,7 @@ class FlutterBackendEndpoints:
                 PostModelResponse: The response object containing the request id.
             """
             try:
-                data = await self.crud.read_by_style('items', request.style)
+                data = await self.crud.read_by_style(self.collection_name, request.style)
                 # print(data)
                 payload = data['payload']
                 # print(payload)
@@ -139,7 +129,7 @@ class FlutterBackendEndpoints:
                 # self.logger.error({"error": str(e)})
                 raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
-        @self.router.post("/hair", response_model=PostModelResponse)
+        @self.router.post("/flutter/hair", response_model=PostModelResponse)
         async def hair(request: HairRequest):
             """
             Change the style, color hair of the image.
@@ -149,7 +139,7 @@ class FlutterBackendEndpoints:
                 PostModelResponse: The response object containing the request id.
             """
             try:
-                data = await self.crud.read_by_style('items', request.style)
+                data = await self.crud.read_by_style(self.collection_name, request.style)
                 payload = data['payload']
                 payload['prompt'] = payload['prompt'].replace('param_hair color', request.color + " hair color")
                 # print(payload['prompt'])
@@ -169,7 +159,7 @@ class FlutterBackendEndpoints:
                 # self.logger.error({"error": str(e)})
                 raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
-        @self.router.get("/result/{request_id}")
+        @self.router.get("/flutter/result/{request_id}")
         async def result(request: Request, request_id: str, category: str):
             """
             Get the result of the AI model.
@@ -190,7 +180,7 @@ class FlutterBackendEndpoints:
                 # self.logger.error({"error": str(e)})
                 raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
-        @self.router.get("/get_categories")
+        @self.router.get("/flutter/get_categories")
         async def get_categories():
             """
             Get all categories from the database.
@@ -200,13 +190,13 @@ class FlutterBackendEndpoints:
                 List[str]: A list of categories.
             """
             try:
-                data = await self.crud.get_categories('items')
+                data = await self.crud.get_categories(self.collection_name)
                 return data
             except Exception as e:
                 # self.logger.error({"error": str(e)})
                 raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
-        @self.router.get("/get_colors")
+        @self.router.get("/flutter/get_colors")
         async def get_colors():
             """
             Get all colors from the database.
@@ -216,7 +206,7 @@ class FlutterBackendEndpoints:
                 List[str]: A list of colors.
             """
             try:
-                return self.color
+                return self.colors
             except Exception as e:
                 # self.logger.error({"error": str(e)})
                 raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))

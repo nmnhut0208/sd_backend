@@ -10,24 +10,25 @@ class CRUDEndpoints:
         self.crud = crud
 
         # CREATE
-        @self.router.post("/crud/create")
-        async def create(request: dict):
+        @self.router.post("/crud/create/{collection}")
+        async def create(collection: str, request: dict):
             """
             Create an item in the database.
             args:
-                request (dict): The item to create.
+                collection (str): The collection to insert the item into.
+                request (dict): The item to insert.
             return:
                 dict: The status of the operation.
             """
             try:
-                document_id = await self.crud.create("items", request)
+                document_id = await self.crud.create(collection, request)
                 return {"status": "success"}
             except Exception as e:
                 # self.logger.error({"error": str(e)})
                 raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
-        @self.router.get("/crud/read_all")
-        async def read_all():
+        @self.router.get("/crud/read_all/{collection}")
+        async def read_all(collection: str):
             """
             Read all items from the database.
             args:
@@ -36,14 +37,14 @@ class CRUDEndpoints:
                 List[ItemResponse]: A list of items.
             """
             try:
-                data = await self.crud.read_all("items")
+                data = await self.crud.read_all(collection)
                 return data
             except Exception as e:
                 # self.logger.error({"error": str(e)})
                 raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
-        @self.router.get("/crud/read_by_style/{style}")
-        async def read_by_style(style: str):
+        @self.router.get("/crud/read_by_style/{collection}/{style}")
+        async def read_by_style(collection: str, style: str):
             """
             Read items by style from the database.
 
@@ -54,7 +55,7 @@ class CRUDEndpoints:
                 ItemResponse: The item with the given style.
             """
             try:
-                data = await self.crud.read_by_style("items", style)
+                data = await self.crud.read_by_style(collection, style)
                 return data
             except Exception as e:
                 # self.logger.error({"error": str(e)})
@@ -78,8 +79,8 @@ class CRUDEndpoints:
         #         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
         # update by style
-        @self.router.put("/crud/update_by_style/{style}")
-        async def update_by_style(style: str, request: dict):
+        @self.router.put("/crud/update_by_style/{collection}/{style}")
+        async def update_by_style(collection: str, style: str, request: dict):
             """
             Update items by style in the database.
             args:
@@ -89,7 +90,7 @@ class CRUDEndpoints:
                 dict: The status of the operation.
             """
             try:
-                modified_count = await self.crud.update_by_style("items", style, request)
+                modified_count = await self.crud.update_by_style(collection, style, request)
                 return {"status": "success"}
             except Exception as e:
                 # self.logger.error({"error": str(e)})
@@ -111,8 +112,8 @@ class CRUDEndpoints:
         #         # self.logger.error({"error": str(e)})
         #         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
-        @self.router.delete("/crud/clear_collection")
-        async def clear_collection():
+        @self.router.delete("/crud/clear_collection/{collection}")
+        async def clear_collection(collection: str):
             """
             Clear all items from the database.
             args:
@@ -121,14 +122,14 @@ class CRUDEndpoints:
                 dict: The status of the operation.
             """
             try:
-                await self.crud.clear_collection("items")
+                await self.crud.clear_collection(collection)
                 return {"status": "success"}
             except Exception as e:
                 # self.logger.error({"error": str(e)})
                 raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
-        @self.router.delete("/crud/delete_by_style/{style}")
-        async def delete_by_style(style: str):
+        @self.router.delete("/crud/delete_by_style/{collection}/{style}")
+        async def delete_by_style(collection: str, style: str):
             """
             Delete items by style from the database.
             args:
@@ -137,15 +138,15 @@ class CRUDEndpoints:
                 dict: The status of the operation.
             """
             try:
-                deleted_count = await self.crud.delete_by_style("items", style)
+                deleted_count = await self.crud.delete_by_style(collection, style)
                 return {"status": "success"}
             except Exception as e:
                 # self.logger.error({"error": str(e)})
                 raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
         
-        @self.router.get("/crud/style_exists/{style}")
-        async def style_exists(style: str):
+        @self.router.get("/crud/style_exists/{collection}/{style}")
+        async def style_exists(collection: str, style: str):
             """
             Check if a style exists in the database.
             args:
@@ -154,7 +155,7 @@ class CRUDEndpoints:
                 dict: The status of the operation.
             """
             try:
-                exists = await self.crud.style_exists("items", style)
+                exists = await self.crud.style_exists(collection, style)
                 return {"exists": exists}
             except Exception as e:
                 # self.logger.error({"error": str(e)})
@@ -162,10 +163,10 @@ class CRUDEndpoints:
 
 
         # get document id by style
-        @self.router.get("/crud/get_document_id_by_style/{style}")
-        async def get_document_id_by_style(style: str):
+        @self.router.get("/crud/get_document_id_by_style/{collection}/{style}")
+        async def get_document_id_by_style(collection: str, style: str):
             try:
-                document_id = await self.crud.get_document_id_by_style('items', style)
+                document_id = await self.crud.get_document_id_by_style(collection, style)
                 return str(document_id)
             except Exception as e:
                 self.logger.error({"error": str(e)})

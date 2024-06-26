@@ -12,7 +12,7 @@ for category, items_subcategory in data.items():
         for item in items_style:
             list_items.append({"category": category, "subcategory": subcategory, "style": item["style"], "img_url": item["img_url"], "payload": item["payload"]})
 
-api_url = "https://flutter-backend-jhac.onrender.com/backend/crud/create"
+api_url = "http://localhost:8111/backend/crud/create/flutter"
 
 for item in list_items:
     response = requests.post(api_url, json=item)

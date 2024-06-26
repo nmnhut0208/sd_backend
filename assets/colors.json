@@ -1,0 +1,46 @@
+[
+    {
+        "color": "red",
+        "hexCode": "#A61414"
+    },
+    {
+        "color": "ginger",
+        "hexCode": "#6D4730"
+    },
+    {
+        "color": "blonde",
+        "hexCode": "#D9B380"
+    },
+    {
+        "color": "gray",
+        "hexCode": "#838794"
+    },
+    {
+        "color": "white",
+        "hexCode": "#F2F2F2"
+    },
+    {
+        "color": "black",
+        "hexCode": "#242424"
+    },
+    {
+        "color": "brown",
+        "hexCode": "#312324"
+    },
+    {
+        "color": "pink",
+        "hexCode": "#E27589"
+    },
+    {
+        "color": "blue tiffany",
+        "hexCode": "#56BEBA"
+    },
+    {
+        "color": "blue sapphire",
+        "hexCode": "#0067A5"
+    },
+    {
+        "color": "colorful",
+        "hexCode": "linear-gradient(160.31deg, #FC4848 0%, #FB9145 16.5%, #F3E246 34%, #58F955 51.5%, #5BF8F8 68%, #5578F3 83%, #F367F5 100%)"
+    }
+]
