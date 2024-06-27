@@ -21,6 +21,9 @@ class CRUDEndpoints:
                 dict: The status of the operation.
             """
             try:
+                exists = await self.crud.style_exists(collection, request['style'])
+                if exists:
+                    return {"status": "exists"}
                 document_id = await self.crud.create(collection, request)
                 return {"status": "success"}
             except Exception as e:

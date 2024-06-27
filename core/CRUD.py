@@ -8,6 +8,8 @@ class MongoCRUD:
         self.client = AsyncIOMotorClient(uri)
         self.db = self.client[database_name]
 
+    ### flutter
+
     async def create(self, collection_name, document):
         collection = self.db[collection_name]
         result = await collection.insert_one(document)
@@ -76,7 +78,74 @@ class MongoCRUD:
         else:
             cursor = collection.find({"category": category}, {"_id": 0, "payload": 0})
         return await cursor.to_list(length=None)
- 
+
+
+    ### cms
+    async def read_all_cms(self, collection_name):
+        collection = self.db[collection_name]
+        cursor = collection.find({}, {"_id": 0, "items": 0})
+        return await cursor.to_list(length=None)
+
+    # get items by category
+    async def read_by_category_cms(self, collection_name, category):
+        collection = self.db[collection_name]
+        document = await collection.find_one({"name": category}, {"_id": 0, "items": 1})
+        return document
+
+    # update by name
+    async def update_by_name_cms(self, collection_name, name, updates):
+        collection = self.db[collection_name]
+        result = await collection.update_many({"name": name}, {"$set": updates})
+        return result.modified_count
+
+    # update item by category and item name but still fields not in updates will be kept
+    async def update_item_by_name_cms(self, collection_name, category, item_name, updates):
+        collection = self.db[collection_name]
+        update_fields = {f"items.$.{k}": v for k, v in updates.items()}
+        result = await collection.update_many({"name": category, "items.name": item_name}, {"$set": update_fields})
+        return result.modified_count
+
+    # add category
+    async def add_category_cms(self, collection_name, document):
+        collection = self.db[collection_name]
+        result = await collection.insert_one(document)
+        return str(result.inserted_id)
+
+    # add item to category
+    async def add_item_to_category_cms(self, collection_name, category, item):
+        collection = self.db[collection_name]
+        result = await collection.update_one({"name": category}, {"$push": {"items": item}})
+        return result.modified_count
+
+    # delete category
+    async def delete_category_cms(self, collection_name, category):
+        collection = self.db[collection_name]
+        result = await collection.delete_one({"name": category})
+        return result.deleted_count
+
+    # delete item from category
+    async def delete_item_from_category_cms(self, collection_name, category, item_name):
+        collection = self.db[collection_name]
+        result = await collection.update_one({"name": category}, {"$pull": {"items": {"name": item_name}}})
+        return result.modified_count
+
+    # check exists category
+    async def category_exists_cms(self, collection_name, category):
+        collection = self.db[collection_name]
+        document = await collection.find_one({"name": category})
+        return document is not None
+
+    # check exists item in category
+    async def item_exists_in_category_cms(self, collection_name, category, item_name):
+        collection = self.db[collection_name]
+        document = await collection.find_one({"name": category, "items.name": item_name})
+        return document is not None
+
+    # get payload by category and item name
+    async def get_payload_by_category_and_item_name_cms(self, collection_name, category, item_name):
+        collection = self.db[collection_name]
+        document = await collection.find_one({"name": category, "items.name": item_name}, {"items.$": 1, "_id": 0})
+        return document.get("items")[0].get("payload")
 
 
 async def main():
