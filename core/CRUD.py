@@ -147,6 +147,12 @@ class MongoCRUD:
         document = await collection.find_one({"name": category, "items.name": item_name}, {"items.$": 1, "_id": 0})
         return document.get("items")[0].get("payload")
 
+    # get ai type by category and item name
+    async def get_ai_type_by_category_cms(self, collection_name, category):
+        collection = self.db[collection_name]
+        document = await collection.find_one({"name": category}, {"type": 1, "_id": 0})
+        return document.get("type")
+
 
 async def main():
     # mongodb://%s:%s@%s/?authSource=admin

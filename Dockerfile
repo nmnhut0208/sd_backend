@@ -7,5 +7,12 @@ WORKDIR /app
 
 RUN pip install -r requirements.txt
 
-# Ensure the virtual environment is used by uvicorn
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8111"]
+# Set the default number of workers if not provided
+ENV WORKERS=2
+
+# Copy the entrypoint script
+# COPY entrypoint.sh /app/entrypoint.sh
+RUN chmod +x /app/entrypoint.sh
+
+# Use the entrypoint script to run Uvicorn
+ENTRYPOINT ["/app/entrypoint.sh"]

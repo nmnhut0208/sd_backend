@@ -28,3 +28,9 @@ class PostModelResponse(BaseModel):
 
 # class GetModelResponse(BaseModel):
 #     img: str
+
+class CMSRequest(BaseModel):
+    img: str
+    category: str
+    item_name: str
+    properties: dict
