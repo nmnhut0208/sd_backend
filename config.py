@@ -22,7 +22,7 @@ PASSWORD_MONGO = os.getenv('PASSWORD_MONGO', 'vtd@123!@#')
 ADD_MONGO = os.getenv('ADD_MONGO', 'localhost:27017')
 DATABASE_URL = "mongodb://%s:%s@%s/?authSource=admin" % (
         quote_plus(USERNAME_MONGO), quote_plus(PASSWORD_MONGO),quote_plus(ADD_MONGO))
-MAX_RETRIES = int(os.getenv('MAX_RETRIES', 10))
+MAX_RETRIES = int(os.getenv('MAX_RETRIES', 30))
 RETRY_DELAY = int(os.getenv('RETRY_DELAY', 5))
 
 # "mongodb://%s:%s@%s/?authSource=admin" % (

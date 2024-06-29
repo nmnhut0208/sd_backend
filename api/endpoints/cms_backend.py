@@ -151,7 +151,7 @@ class CMSBackendEndpoints:
                 dict: The status of the operation.
             """
             try:
-                await self.crud.delete_item_cms(self.collection_name, category, item_name)
+                await self.crud.delete_item_from_category_cms(self.collection_name, category, item_name)
                 return {"status": "success"}
             except Exception as e:
                 raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
@@ -217,6 +217,7 @@ class CMSBackendEndpoints:
                                     else:
                                         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=response['message'])
                                 time.sleep(config.RETRY_DELAY)
+                            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Request timed out.")
                         else:
                             raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=response['message'])
 
